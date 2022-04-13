@@ -14,12 +14,13 @@
     </a>
     <nav class="nav">
       <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <ul class="nav__list">
-        <li class="nav__item"><a>Главная</a></li>
-        <li class="nav__item"><a href="photo.html">Фотографии</a></li>
-        <li class="nav__item"><a href="form.html">Конкурс</a></li>
-        <li class="nav__item"><a href="https://htmlacademy.ru">HTML Academy</a></li>
-      </ul>
+
+      <div class="nav__list">
+        <a class="nav__item nav__item--current" href="index.html">Главная</a>
+        <a class="nav__item" href="photo.html">Фотографии</a>
+        <a class="nav__item" href="form.html">Конкурс</a>
+        <a class="nav__item" href="https://htmlacademy.ru">HTML Academy</a>
+      </div>
     </nav>
   </header>
   <!-- Основная часть -->
@@ -29,9 +30,9 @@
       <h2 class="promo__title">Взгляните на жизнь иначе!</h2>
       <a class="promo__button" href="#">Скачать приложение</a>
       <div>
-        <a class="promo__item promo__item--apple" href="#"></a>
-        <a class="promo__item promo__item--android" href="#"></a>
-        <a class="promo__item promo__item--microsoft" href="#"></a>
+        <a class="promo__item promo__item--apple" href="#">Apple</a>
+        <a class="promo__item promo__item--android" href="#">Android</a>
+        <a class="promo__item promo__item--microsoft" href="#">Microsoft</a>
       </div>
       <p class="promo__content">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
     </section>
@@ -99,21 +100,21 @@
           </tr>
           <tr class="price-table__main">
             <td class="price__value">Розовый фильтр</td>
-            <td class="price__value price__value--positive"></td>
-            <td class="price__value price__value--positive"></td>
-            <td class="price__value price__value--positive"></td>
+            <td class="price__value price__value--positive">Да</td>
+            <td class="price__value price__value--positive">Да</td>
+            <td class="price__value price__value--positive">Да</td>
           </tr>
           <tr class="price-table__main">
             <td class="price__value">Смайлики</td>
-            <td class="price__value price__value--negative"></td>
-            <td class="price__value price__value--positive"></td>
-            <td class="price__value price__value--positive"></td>
+            <td class="price__value price__value--negative">Нет</td>
+            <td class="price__value price__value--positive">Да</td>
+            <td class="price__value price__value--positive">Да</td>
           </tr>
           <tr class="price-table__main">
             <td class="price__value">Комментарии</td>
-            <td class="price__value price__value--negative"></td>
-            <td class="price__value price__value--negative"></td>
-            <td class="price__value price__value--positive"></td>
+            <td class="price__value price__value--negative">Нет</td>
+            <td class="price__value price__value--negative">Нет</td>
+            <td class="price__value price__value--positive">Да</td>
           </tr>
         </table>
         <p class="price__toggles slider__toggles">
