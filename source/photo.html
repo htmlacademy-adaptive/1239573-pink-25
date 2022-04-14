@@ -14,15 +14,93 @@
     </a>
     <nav class="nav">
       <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <ul class="nav__list">
-        <li class="nav__item"><a href="index.html">Главная</a></li>
-        <li class="nav__item"><a href="#">Фотографии</a></li>
-        <li class="nav__item"><a href="form.html">Конкурс</a></li>
-        <li class="nav__item"><a href="https://htmlacademy.ru">HTML Academy</a></li>
-      </ul>
+      <div class="nav__list">
+        <a class="nav__item" href="index.html">Главная</a>
+        <a class="nav__item nav__item--current" href="photo.html">Фотографии</a>
+        <a class="nav__item" href="form.html">Конкурс</a>
+        <a class="nav__item" href="https://htmlacademy.ru">HTML Academy</a>
+      </div>
     </nav>
   </header>
+  <!-- Основной радел -->
+  <main class="main">
+    <h1 class="photo__title">Фотографии пользователей</h1>
+    <p class="photo__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+    <section class="main-photo">
+      <h2 class="visually-hidden">Панорама дня</h2>
+      <img class="main-photo__image" src="img/panorama.jpg" width="320" height="137"
+        alt="Подвесной мост в Красной Поляне">
+      <p class="main-photo__autor">Анна <span>(5 минут назад)</span></p>
+      <p class="main-photo__comment">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в
+        перископе, задавайте свои вопросы!</p>
+      <p class="main-photo__likes">Нравится: 215</p>
+    </section>
 
+    <section class="gallery">
+      <h2 class="visually-hidden">Галлерея работ</h2>
+      <div class="gallery__list">
+        <article class="gallery__item">
+          <img class="main-photo__image" src="img/galery-photo-1.jpg" width="280" height="180" alt="Фотосессия Шкоды">
+          <p class="main-photo__autor">Левон <span>(5 часов назад)</span></p>
+          <p class="main-photo__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+          <p class="main-photo__likes">Нравится: 356</p>
+        </article>
+        <article class="gallery__item">
+          <img class="main-photo__image" src="img/galery-photo-2.jpg" width="280" height="180"
+            alt="Музыкальная установка">
+          <p class="main-photo__autor">Антон <span>(12 часов назад)</span></p>
+          <p class="main-photo__comment">Соседи будут рады!</p>
+          <p class="main-photo__likes">Нравится: 666</p>
+        </article>
+        <article class="gallery__item">
+          <img class="main-photo__image" src="img/galery-photo-3.jpg" width="280" height="180"
+            alt="Небо через панорамное окно">
+          <p class="main-photo__autor">Борис <span>(20 часов назад)</span></p>
+          <p class="main-photo__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
+          <p class="main-photo__likes">Нравится: 215</p>
+        </article>
+        <article class="gallery__item">
+          <img class="main-photo__image" src="img/galery-photo-4.jpg" width="280" height="180" alt="Кубанская бахча">
+          <p class="main-photo__autor">Сергей <span>(25 часов назад)</span></p>
+          <p class="main-photo__comment">Самая кубанская в мире!</p>
+          <p class="main-photo__likes">Нравится: 4</p>
+        </article>
+        <article class="gallery__item">
+          <img class="main-photo__image" src="img/galery-photo-5.jpg" width="280" height="180" alt="Ноги на фоне гор">
+          <p class="main-photo__autor">Максим <span>(40 часов назад)</span></p>
+          <p class="main-photo__comment">Где снег-то?</p>
+          <p class="main-photo__likes">Нравится: 150</p>
+        </article>
+        <article class="gallery__item">
+          <img class="main-photo__image" src="img/galery-photo-6.jpg" width="280" height="180"
+            alt="Крыло самолета на закате">
+          <p class="main-photo__autor">Надежда <span>(45 часов назад)</span></p>
+          <p class="main-photo__comment">Всем GM и взаимные лайки!</p>
+          <p class="main-photo__likes">Нравится: 2560</p>
+        </article>
+      </div>
+    </section>
+    <section class="addition-photo">
+      <h2 class="visually-hidden">Добавление фото</h2>
+      <p class="addition-photo__caption">Затмите их всех! Выкладывайте всё, что накопилось в телефоне!</p>
+
+      <form class="form-photo">
+        <img class="form-photo__image" src="img/winter-road.jpg" width="300" height="400" alt="Зимняя дорога">
+        <div class="form-photo__crop">
+          <input class="form-photo__filter-range" type="range" min="1" max="100" name="crop" value="87">
+        </div>
+        <div class="form-photo__fill">
+          <input class="form-photo__filter-range" type="range" min="1" max="100" name="fill" value="14">
+        </div>
+        <div class="form-photo__brightness">
+          <input class="form-photo__filter-range" type="range" min="1" max="100" name="contrast" value="50">
+        </div>
+
+        <button class="editor__button" type="submit">Запостить</button>
+        <button class="editor__button editor__button--cancel" type="reset">Отмена</button>
+      </form>
+    </section>
+  </main>
   <!-- Подвал -->
   <footer class="footer">
     <a class="footer__logo" href="index.html">
