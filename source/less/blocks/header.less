@@ -1,21 +1,30 @@
-.header {
+.header__wrapper-top {
   display: flex;
   justify-content: space-between;
   background-color: @dark-blue;
-  align-items: center;
+  padding: 20px;
 }
 
-.header__logo {
-  padding-left: 20px;
+.nav-toggle {
+  background-image: url(../../img/open-menu-btn.svg);
+  width: 50px;
+  height: 24px;
+  background-color: transparent;
+  border: 0;
+
 }
 
-.nav-list {
-  display: flex;
-  flex-direction: column;
+.header__nav-list {
+  display: none;
 }
 
 .nav__item {
   text-decoration: none;
   color: @basic-white;
   text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  background-color: red;
+  height: 400px;
 }

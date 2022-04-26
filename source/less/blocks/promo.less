@@ -1,7 +1,7 @@
-.promo {
+.promo__header {
   background-color: @darkest-blue;
   background-image: url("../../img/back-mobile.jpg");
-  background-size: cover;
+  // background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,9 +10,35 @@
 .promo__title {
   text-align: center;
   color: @basic-white;
+  font-size: 24px;
+  font-weight: 300;
+  max-width: 300px;
+  position: relative;
+}
+
+.promo__title::after {
+  content: "";
+  position: absolute;
+  background-image: url(../../img/screen.png);
+  width: 112px;
+  height: 200px;
+  top: 107px;
+  left: 94px;
+}
+
+.promo__mobile-image {
+  margin-bottom: -8px;
+}
+
+.promo__devices {
+  padding-top: 28px;
+  background-color: @darkest-blue;
+  text-align: center;
 }
 
 .promo__button {
+  font-weight: 700;
+  font-size: 18px;
   text-decoration: none;
   display: inline-block;
   border: 3px solid @basic-white;
@@ -20,13 +46,39 @@
   box-sizing: border-box;
   border-radius: 29px;
   padding: 10px 10px;
+  min-width: 258px;
+}
+
+.promo__devices-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 200px;
+  margin: auto;
+  padding-top: 30px;
+
 }
 
 .promo__item {
   color: @basic-white;
-  
+  font-size: 0px;
 }
+
+// .promo__item--apple::before {
+//   // content: "";
+//   content: "123";
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   background-image: url(../../img/apple-logo.svg);
+//   width: 47px;
+//   height: 56px;
+
+// }
 
 .promo__content {
   color: @basic-white;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 26px;
+  padding: 10px 16px;
 }
