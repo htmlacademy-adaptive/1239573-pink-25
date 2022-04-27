@@ -72,7 +72,7 @@
 .contest-form__comment-text {
   font-weight: 400;
   font-size: 18px;
-  color: #000;
+  color: @basic-black;
   font-family: inherit;
   width: 82%;
   height: 180px;
@@ -80,7 +80,7 @@
   padding-right: 20px;
   padding-top: 14px;
   line-height: 30px;
-  border: 2px solid #e5e5e5;
+  border: 2px solid @light-grey;
   border-radius: 1px;
   outline: 0;
   margin: auto auto 33px;
@@ -94,7 +94,7 @@
 .contest-form__button {
   font-weight: 700;
   font-size: 18px;
-  color: #fff;
+  color: @basic-white;
   font-family: inherit;
   text-transform: uppercase;
   width: 276px;
@@ -144,7 +144,7 @@
   padding-bottom: 20px;
 }
 
-.contest-form__radio+label::before {
+.contest-form__radio + label::before {
   content: "";
   position: absolute;
   width: 37px;
@@ -156,7 +156,7 @@
   top: 13px;
 }
 
-.contest-form__radio:checked+label::after {
+.contest-form__radio:checked + label::after {
   content: "";
   position: absolute;
   width: 15px;
@@ -172,7 +172,7 @@
   padding-left: 75px;
 }
 
-.contest-form__checkbox+label::before {
+.contest-form__checkbox + label::before {
   content: "";
   position: absolute;
   width: 35px;
@@ -184,7 +184,7 @@
   top: 14px;
 }
 
-.contest-form__checkbox:checked+label::after {
+.contest-form__checkbox:checked + label::after {
   content: "";
   position: absolute;
   background: url(../../img/tick.svg);
