@@ -1,0 +1,72 @@
+.price {
+  text-align: center;
+}
+
+.price__table {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  border-collapse: collapse;
+}
+
+.price__title-empty,
+.price__value-empty {
+  display: none;
+}
+
+.price__title {
+  font-weight: 700;
+  font-size: 16px;
+  color: @basic-white;
+  text-transform: uppercase;
+  height: 94px;
+  background-color: @dark-blue;
+  min-width: 260px;
+  border: 2px solid @basic-grey;
+  position: relative;
+}
+
+.price__title span {
+  display: flex;
+  flex-direction: column;
+}
+
+.price-table__main {
+  position: relative;
+}
+
+.price__value {
+  font-weight: 400;
+  font-size: 14px;
+  color: @dark-blue;
+  height: 59px;
+  text-transform: uppercase;
+  text-align: left;
+  border: 2px solid @light-grey;
+  padding-left: 20px;
+  position: relative;
+}
+
+.price__value--yes::after {
+  content: "";
+  position: absolute;
+  background: url('../../img/yes.svg');
+  background-repeat: no-repeat;
+  width: 31px;
+  height: 21px;
+  right: 20px;
+}
+
+.price__value--no::after {
+  content: "";
+  position: absolute;
+  background: url('../../img/no.svg');
+  background-repeat: no-repeat;
+  width: 27px;
+  height: 27px;
+  right: 20px;
+}
+
+.price__toggles {
+  padding-bottom: 30px;
+}

@@ -1,0 +1,194 @@
+.contest-promo__header {
+  background-color: @dark-blue;
+  background-image: url('../../img/back-mobile.jpg');
+  background-size: cover;
+  padding: 36px 20px 51px 20px;
+}
+
+.contest-promo__title {
+  font-weight: 300;
+  font-size: 24px;
+  color: @basic-white;
+  padding: 30px 0;
+  margin: auto;
+  text-align: center;
+  line-height: 32px;
+  max-width: 300px;
+}
+
+.contest-promo__slogan {
+  font-weight: 420;
+  font-size: 14px;
+  color: @dark-blue;
+  padding: 54px 20px 0 20px;
+  line-height: 30px;
+  max-width: 400px;
+  text-align: center;
+}
+
+.contest__form {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.contest-form__group {
+  border: 0;
+}
+
+.contest-form__name-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.contest-form__label {
+  font-weight: 400;
+  font-size: 14px;
+  color: @special-pink;
+  text-transform: uppercase;
+  line-height: 18px;
+  padding-left: 26px;
+  padding-bottom: 10px;
+  padding-top: 23px;
+}
+
+.contest-form__input {
+  height: 59px;
+  border: 2px solid @light-grey;
+  border-radius: 2px;
+  padding-left: 20px;
+  font-weight: 400;
+  font-size: 18px;
+  color: @basic-black;
+  font-family: inherit;
+}
+
+.contest-form__comment {
+  text-align: center;
+}
+
+.contest-form__comment-text {
+  font-weight: 400;
+  font-size: 18px;
+  color: @basic-black;
+  font-family: inherit;
+  width: 82%;
+  height: 180px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 14px;
+  line-height: 30px;
+  border: 2px solid @light-grey;
+  border-radius: 1px;
+  outline: 0;
+  margin: auto auto 33px;
+}
+
+.contest-form__button-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.contest-form__button {
+  font-weight: 700;
+  font-size: 18px;
+  color: @basic-white;
+  font-family: inherit;
+  text-transform: uppercase;
+  width: 276px;
+  height: 59px;
+  background-color: @special-green;
+  border: 2px solid @special-green;
+  border-radius: 2px;
+  outline: 0;
+  margin: auto;
+}
+
+.contest-form__caption {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: @dark-blue;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.contest-form__caption span {
+  color: @special-pink;
+}
+
+.contest-form__label-devices,
+.contest-form__label-achievement {
+  text-align: center;
+  max-width: 220px;
+}
+
+.contest-form__radio,
+.contest-form__checkbox {
+  display: none;
+}
+
+.contest-form__devices,
+.contest-form__achievement {
+  background-color: @basic-grey;
+}
+
+.contest-form__devices-item,
+.contest-form__achievement-item {
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.contest-form__radio + label::before {
+  content: "";
+  position: absolute;
+  width: 37px;
+  height: 37px;
+  background-color: @basic-white;
+  border: 2px solid @light-grey;
+  border-radius: 50%;
+  left: 6px;
+  top: 13px;
+}
+
+.contest-form__radio:checked + label::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-color: @special-pink;
+  border-radius: 50%;
+  left: 19px;
+  top: 27px;
+}
+
+.contest-form__devices-label,
+.contest-form__achievement-label {
+  padding-left: 75px;
+}
+
+.contest-form__checkbox + label::before {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  background: @basic-white;
+  border: 2px solid @light-grey;
+  border-radius: 2px;
+  left: 6px;
+  top: 14px;
+}
+
+.contest-form__checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  background: url('../../img/tick.svg');
+  width: 22px;
+  height: 16px;
+  left: 16px;
+  top: 27px;
+}
