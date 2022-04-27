@@ -57,7 +57,7 @@ img {
   padding: 20px;
 }
 .nav-toggle {
-  background-image: url("../../img/open-menu-btn.svg");
+  background-image: url('../../img/open-menu-btn.svg');
   width: 50px;
   height: 24px;
   background-color: transparent;
@@ -73,7 +73,7 @@ img {
 }
 .promo__header {
   background-color: #1d2631;
-  background-image: url("../../img/back-mobile.jpg");
+  background-image: url('../../img/back-mobile.jpg');
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -89,7 +89,7 @@ img {
 .promo__title::after {
   content: "";
   position: absolute;
-  background-image: url("../../img/screen.png");
+  background-image: url('../../img/screen.png');
   width: 112px;
   height: 200px;
   top: 107px;
@@ -169,7 +169,7 @@ img {
 .advantages__image-container::before {
   content: "";
   position: absolute;
-  background-image: url("../../img/iphone-screen-3.png");
+  background-image: url('../../img/iphone-screen-3.png');
   background-repeat: no-repeat;
   background-position: 56% 50%;
   width: 157px;
@@ -278,7 +278,7 @@ img {
 .price__value--yes::after {
   content: "";
   position: absolute;
-  background: url("../../img/yes.svg");
+  background: url('../../img/yes.svg');
   background-repeat: no-repeat;
   width: 31px;
   height: 21px;
@@ -287,7 +287,7 @@ img {
 .price__value--no::after {
   content: "";
   position: absolute;
-  background: url("../../img/no.svg");
+  background: url('../../img/no.svg');
   background-repeat: no-repeat;
   width: 27px;
   height: 27px;
@@ -347,7 +347,7 @@ img {
 }
 .htmlacdademy-link::after {
   content: "";
-  background-image: url("../../img/html-academy.svg");
+  background-image: url('../../img/html-academy.svg');
   background-repeat: no-repeat;
   width: 27px;
   height: 34px;
@@ -355,19 +355,19 @@ img {
   margin-left: 15px;
 }
 .social__item--vk {
-  background-image: url("../../img/vk.svg");
+  background-image: url('../../img/vk.svg');
   background-repeat: no-repeat;
   width: 18px;
   height: 18px;
 }
 .social__item--telegram {
-  background-image: url("../../img/telegram.svg");
+  background-image: url('../../img/telegram.svg');
   background-repeat: no-repeat;
   width: 18px;
   height: 18px;
 }
 .social__item--youtube {
-  background-image: url("../../img/youtube.svg");
+  background-image: url('../../img/youtube.svg');
   background-repeat: no-repeat;
   width: 18px;
   height: 18px;
@@ -380,7 +380,7 @@ img {
 }
 .photo-promo__header {
   background-color: #283645;
-  background-image: url("../../img/back-mobile.jpg");
+  background-image: url('../../img/back-mobile.jpg');
   background-size: cover;
   background-position: 50% -40px;
   background-repeat: no-repeat;
@@ -455,7 +455,7 @@ img {
 .photo__likes::before {
   content: "";
   position: absolute;
-  background-image: url("../img/heart.svg");
+  background-image: url('../img/heart.svg');
   width: 13px;
   height: 12px;
   left: 16px;
@@ -540,19 +540,19 @@ img {
 .photo__icons-crop {
   width: 44px;
   height: 44px;
-  background-image: url("../img/crop.svg");
+  background-image: url('../img/crop.svg');
   background-repeat: no-repeat;
 }
 .photo__icons-fill {
   width: 48px;
   height: 43px;
-  background-image: url("../img/fill.svg");
+  background-image: url('../img/fill.svg');
   background-repeat: no-repeat;
 }
 .photo__icons-contrast {
   width: 32px;
   height: 32px;
-  background-image: url("../img/contrast.svg");
+  background-image: url('../img/contrast.svg');
   background-repeat: no-repeat;
   margin-top: 5px;
 }
@@ -569,7 +569,7 @@ img {
 }
 .contest-promo__header {
   background-color: #283645;
-  background-image: url("../../img/back-mobile.jpg");
+  background-image: url('../../img/back-mobile.jpg');
   background-size: cover;
   padding: 36px 20px 51px 20px;
 }
@@ -587,7 +587,7 @@ img {
   font-weight: 420;
   font-size: 14px;
   color: #283645;
-  padding: 54px 20px 0px 20px;
+  padding: 54px 20px 0 20px;
   line-height: 30px;
   max-width: 400px;
   text-align: center;
@@ -733,7 +733,7 @@ img {
 .contest-form__checkbox:checked + label::after {
   content: "";
   position: absolute;
-  background: url("../../img/tick.svg");
+  background: url('../../img/tick.svg');
   width: 22px;
   height: 16px;
   left: 16px;
