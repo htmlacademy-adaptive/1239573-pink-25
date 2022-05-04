@@ -50,7 +50,7 @@
 .price__value--yes::after {
   content: "";
   position: absolute;
-  background: url('../../img/yes.svg');
+  background: url('../img/yes.svg');
   background-repeat: no-repeat;
   width: 31px;
   height: 21px;
@@ -60,7 +60,7 @@
 .price__value--no::after {
   content: "";
   position: absolute;
-  background: url('../../img/no.svg');
+  background: url('../img/no.svg');
   background-repeat: no-repeat;
   width: 27px;
   height: 27px;
@@ -69,4 +69,23 @@
 
 .price__toggles {
   padding-bottom: 30px;
+}
+
+@media (min-width: @tablet-width) {
+  .price__title-empty,
+  .price__value-empty {
+    display: block;
+    background-color: @basic-white;
+    // border: none;
+  }
+
+  .price__value--no,
+  .price__value--yes {
+    font-size: 0;
+  }
+
+  .price__value--no::after,
+  .price__value--yes::after {
+    left: 50%;
+  }
 }
