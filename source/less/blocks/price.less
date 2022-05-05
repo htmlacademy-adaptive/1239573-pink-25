@@ -1,5 +1,11 @@
 .price {
   text-align: center;
+  background-color: @basic-grey;
+  padding: 50px 0;
+}
+
+.price__wrapper {
+  background-color: @basic-white;
 }
 
 .price__table {
@@ -50,7 +56,7 @@
 .price__value--yes::after {
   content: "";
   position: absolute;
-  background: url('../img/yes.svg');
+  background: url("../img/yes.svg");
   background-repeat: no-repeat;
   width: 31px;
   height: 21px;
@@ -60,7 +66,7 @@
 .price__value--no::after {
   content: "";
   position: absolute;
-  background: url('../img/no.svg');
+  background: url("../img/no.svg");
   background-repeat: no-repeat;
   width: 27px;
   height: 27px;
@@ -69,6 +75,7 @@
 
 .price__toggles {
   padding-bottom: 30px;
+  background-color: @basic-grey;
 }
 
 @media (min-width: @tablet-width) {

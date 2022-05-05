@@ -1,12 +1,14 @@
 .promo {
   background-color: @darkest-blue;
-  background-image: url('../img/back-mobile.jpg');
+  background-image: url("../img/back-mobile.jpg");
   background-size: cover;
 }
-  .promo__wrapper {
+
+.promo__wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: auto;
 }
 
 .promo__title {
@@ -14,7 +16,7 @@
   color: @basic-white;
   font-size: 24px;
   font-weight: 300;
-  max-width: 300px;
+  width: 300px;
   position: relative;
   margin-bottom: 305px;
 }
@@ -22,7 +24,7 @@
 .promo__title::before {
   content: "";
   position: absolute;
-  background-image: url('../img/phone.png');
+  background-image: url("../img/phone.png");
   background-repeat: no-repeat;
   width: 260px;
   height: 300px;
@@ -33,15 +35,11 @@
 .promo__title::after {
   content: "";
   position: absolute;
-  background-image: url('../img/screen.png');
+  background-image: url("../img/screen.png");
   width: 112px;
   height: 200px;
   top: 107px;
   left: 94px;
-}
-
-.promo__mobile-image {
-  margin-bottom: -8px;
 }
 
 .promo__devices {
@@ -84,43 +82,73 @@
   font-size: 14px;
   line-height: 26px;
   padding: 10px 16px;
+  width: 300px;
+  margin: auto;
 }
 
 @media (min-width: @tablet-width) {
   .promo__title {
+    margin-right: auto;
     margin-bottom: 0;
-    padding-top: 100px;
+    margin-top: 0;
   }
+
   .promo__devices {
-    background: none ;
-  }
-  .promo__wrapper {
-    padding-left: 50px;
+    background: none;
+    display: flex;
+    flex-direction: column;
     width: 300px;
   }
+
+  .promo__wrapper {
+    width: 620px;
+    padding: 50px 0;
+    align-items: flex-start;
+  }
+
   .promo__title::before {
     content: "";
     position: absolute;
-    background-image: url('../../img/phone@2x.png');
+    background-image: url("../img/phone.png");
     background-repeat: no-repeat;
-    width: 520px;
-    height: 552px;
-    top: -4px;
-    left: 62%;
+    width: 320px;
+    height: 286px;
+    top: 74px;
+    left: 325px;
   }
 
   .promo__title::after {
     content: "";
     position: absolute;
-    background-image: url('../img/screen.png');
+    background-image: url("../img/screen.png");
     background-size: cover;
-    width: 224px;
-    height: 400px;
-    top: 58px;
-    left: 131%;
+    width: 112px;
+    height: 200px;
+    top: 105px;
+    left: 429px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .promo__title::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/phone.png");
+    background-repeat: no-repeat;
+    width: 320px;
+    height: 286px;
+    top: 74px;
+    left: 425px;
   }
 
-  .promo__content {
-    padding-bottom: 120px;
+  .promo__title::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/screen.png");
+    background-size: cover;
+    width: 112px;
+    height: 200px;
+    top: 105px;
+    left: 529px;
   }
 }

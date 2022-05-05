@@ -11,18 +11,19 @@
 <body class="page__body">
   <!-- Шапка -->
   <header class="header">
-    <div class="header__wrapper-top">
+    <div class="header__wrapper">
       <a class="header__logo" href="index.html">
         <img class="header__logo-image" src="img/logo-white-mobile.svg" width="74" height="23" alt="Приложение «Pink»">
       </a>
       <button class="nav-toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+
+      <nav class="header__nav-list">
+        <a class="nav__item nav__item--current" href="index.html">Главная</a>
+        <a class="nav__item" href="photo.html">Фотографии</a>
+        <a class="nav__item" href="form.html">Конкурс</a>
+        <a class="nav__item" href="https://htmlacademy.ru">HTML Academy</a>
+      </nav>
     </div>
-    <nav class="header__nav-list">
-      <a class="nav__item nav__item--current" href="index.html">Главная</a>
-      <a class="nav__item" href="photo.html">Фотографии</a>
-      <a class="nav__item" href="form.html">Конкурс</a>
-      <a class="nav__item" href="https://htmlacademy.ru">HTML Academy</a>
-    </nav>
   </header>
   <!-- Основная часть -->
   <main class="main">
@@ -30,62 +31,55 @@
     <section class="promo">
       <div class="promo__wrapper">
         <h2 class="promo__title">Взгляните на жизнь иначе!</h2>
-        <!-- <picture><img class="promo__mobile-image" src="img/phone.png" width="320" height="286" -->
-            <!-- alt="Cмартфон с приложением «Pink»"></picture> -->
-      <!-- </div> -->
-      <div class="promo__devices">
-        <a class="promo__button" href="#">Скачать приложение</a>
-        <div class="promo__devices-wrapper">
-          <a class="promo__item promo__item--apple" href="#">Логотип Apple
-            <img src="img/apple-logo.svg" width="47" height="56" alt="Логотип Apple">
-          </a>
-          <a class="promo__item promo__item--android" href="#">Логотип Android
-            <img src="img/android-logo.svg" width="43" height="47" alt="Логотип Android">
-          </a>
-          <a class="promo__item promo__item--microsoft" href="#">Логотип Microsoft
-            <img src="img/microsoft-logo.svg" width="44" height="41" alt="Логотип Microsoft">
-          </a>
+        <div class="promo__devices">
+          <a class="promo__button" href="#">Скачать приложение</a>
+          <div class="promo__devices-wrapper">
+            <a class="promo__item promo__item--apple" href="#">Логотип Apple
+              <img src="img/apple-logo.svg" width="47" height="56" alt="Логотип Apple">
+            </a>
+            <a class="promo__item promo__item--android" href="#">Логотип Android
+              <img src="img/android-logo.svg" width="43" height="47" alt="Логотип Android">
+            </a>
+            <a class="promo__item promo__item--microsoft" href="#">Логотип Microsoft
+              <img src="img/microsoft-logo.svg" width="44" height="41" alt="Логотип Microsoft">
+            </a>
+          </div>
+          <p class="promo__content">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </div>
-        <p class="promo__content">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </div>
-    </div>
     </section>
 
     <!-- О приложении -->
     <section class="advantages">
-      <div class="advantages__title-wrapper">
-        <h2 class="advantages__title">Устали от серости мегаполиса?</h2>
-        <h2 class="advantages__title">Нам есть, что вам предложить!</h2>
-      </div>
-      <div class="advantages__item-vrapper">
+      <div class="advantages__wrapper">
+        <h2 class="advantages__title">Устали от серости мегаполиса? Нам есть, что вам предложить!</h2>
         <div class="advantages__list">
-          <article class="advantages__item">
+          <article class="advantages__item advantages__item--fun">
             <h3>Поднимает настроение</h3>
             <p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в
               несколько кликов!</p>
           </article>
-          <article class="advantages__item">
+          <article class="advantages__item advantages__item--world">
             <h3>Меняет мир вокруг</h3>
             <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить
               эффект</p>
           </article>
-          <article class="advantages__item">
+          <article class="advantages__item advantages__item--friends">
             <h3>Заводит новых друзей</h3>
             <p>Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых
             </p>
           </article>
         </div>
-        <div class="advantages__image-container">
-          <img src="img/iphone-3.png" alt="Изображения смартфона">
-        </div>
-      </div>
-      <div class="advantages__science">
-        <h3>Эффект на 24 часа!</h3>
-        <p>Британские ученые провели исследования и доказали, что положительный эффект от использования приложения
-          длится целые сутки!</p>
-        <a href="#">Узнать больше об исследовании</a>
       </div>
     </section>
+  <section class="science">
+    <div class="science__wrapper">
+      <h3>Эффект на 24 часа!</h3>
+      <p>Британские ученые провели исследования и доказали, что положительный эффект от использования приложения
+        длится целые сутки!</p>
+      <a href="#">Узнать больше об исследовании</a>
+    </div>
+  </section>
 
     <!-- Отзывы -->
     <section class="reviews">
@@ -96,7 +90,6 @@
             <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
               серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             <cite class="reviews__author-name">Николай Петров</cite>
-            <!-- ниже не уверен в выборе тэга -->
             <p class="reviews__author-info">25 лет, водитель трамвая</p>
           </blockquote>
         </div>
@@ -109,7 +102,6 @@
     </section>
     <!-- Прайс-лист -->
     <section class="price">
-      <!-- пока не понял как смиксовать слайдер с таблицей -->
       <div class="price__wrapper slider">
         <h2 class="visually-hidden">Цены</h2>
         <table class="price__table">
