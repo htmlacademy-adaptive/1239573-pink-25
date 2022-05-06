@@ -2,6 +2,12 @@
   text-align: center;
 }
 
+.reviews__wrapper {
+  padding-top: 30px;
+  width: 320px;
+  margin: auto;
+}
+
 .reviews__item {
   display: flex;
   flex-direction: column-reverse;
@@ -56,4 +62,30 @@
 .slider__toggle {
   font-size: 0;
   border: none;
+}
+
+@media (min-width: @tablet-width) {
+  .reviews__wrapper {
+    width: 620px;
+    margin: auto;
+  }
+
+  .reviews__item {
+    flex-direction: column;
+  }
+
+  .reviews__author-info {
+    display: block;
+    margin: 0;
+  }
+
+  .reviews__author-name {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reviews__wrapper {
+    width: 700px;
+  }
 }
