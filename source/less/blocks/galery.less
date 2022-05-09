@@ -4,6 +4,7 @@
   flex-wrap: wrap;
   width: 280px;
   margin: auto;
+  margin-bottom: 20px;
 }
 
 .gallery__image {
@@ -14,7 +15,7 @@
 
 .gallery__container {
   background: @basic-grey;
-  margin: 0 20px 20px 20px;
+  // margin: 0 20px 20px 20px;
   position: relative;
 }
 
@@ -71,6 +72,12 @@
     grid-template-columns: 300px 300px;
     width: 620px;
     margin: 0 auto;
+    grid-gap: 20px;
+  }
+
+  .gallery__item {
+    margin: 0;
+    width: 300px;
   }
 
   .gallery__image {
