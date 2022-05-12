@@ -11,18 +11,18 @@
 <body class="page__body">
   <!-- Шапка -->
   <header class="header">
-    <div class="header__wrapper-top">
+    <div class="header__wrapper">
       <a class="header__logo" href="index.html">
         <img class="header__logo-image" src="img/logo-white-mobile.svg" width="74" height="23" alt="Приложение «Pink»">
       </a>
       <button class="nav-toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <nav class="header__nav-list">
+        <a class="nav__item" href="index.html">Главная</a>
+        <a class="nav__item nav__item--current" href="photo.html">Фотографии</a>
+        <a class="nav__item" href="form.html">Конкурс</a>
+        <a class="nav__item" href="https://htmlacademy.ru">HTML Academy</a>
+      </nav>
     </div>
-    <nav class="header__nav-list">
-      <a class="nav__item" href="index.html">Главная</a>
-      <a class="nav__item nav__item--current" href="photo.html">Фотографии</a>
-      <a class="nav__item" href="form.html">Конкурс</a>
-      <a class="nav__item" href="https://htmlacademy.ru">HTML Academy</a>
-    </nav>
   </header>
   <!-- Основной радел -->
   <main class="main">
@@ -33,72 +33,67 @@
       <p class="photo-promo__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает
         ваших?
       </p>
-    </section>
-    <section class="main-photo">
-      <h2 class="visually-hidden">Панорама дня</h2>
-      <img class="photo__image photo__main-image" src="img/panorama.jpg" width="320" height="137"
-        alt="Подвесной мост в Красной Поляне">
-      <div class="photo__container photo__main-container">
+      <img class="photo__image" src="img/panorama.jpg" width="320" height="137" alt="Подвесной мост в Красной Поляне">
+      <div class="photo__container">
         <p class="photo__autor">Анна <span>(5 минут назад)</span></p>
         <p class="photo__comment">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в
           перископе, задавайте свои вопросы!</p>
         <p class="photo__likes">Нравится: 215</p>
       </div>
     </section>
+    <!-- Галерея -->
     <section class="gallery">
       <h2 class="visually-hidden">Галлерея работ</h2>
-      <!-- <div class="gallery__list"> -->
       <article class="gallery__item">
-        <div class="photo__container">
-          <img class="photo__image" src="img/galery-photo-1.jpg" width="280" height="180" alt="Фотосессия Шкоды">
-          <p class="photo__autor">Левон <span>(5 часов назад)</span></p>
-          <p class="photo__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-          <p class="photo__likes">Нравится: 356</p>
+        <div class="gallery__container">
+          <img class="gallery__image" src="img/galery-photo-1.jpg" width="280" height="180" alt="Фотосессия Шкоды">
+          <p class="gallery__autor">Левон <span>(5 часов назад)</span></p>
+          <p class="gallery__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+          <p class="gallery__likes">Нравится: 356</p>
         </div>
       </article>
       <article class="gallery__item">
-        <div class="photo__container">
-          <img class="photo__image" src="img/galery-photo-2.jpg" width="280" height="180" alt="Музыкальная установка">
-          <p class="photo__autor">Антон <span>(12 часов назад)</span></p>
-          <p class="photo__comment">Соседи будут рады!</p>
-          <p class="photo__likes">Нравится: 666</p>
+        <div class="gallery__container">
+          <img class="gallery__image" src="img/galery-photo-2.jpg" width="280" height="180" alt="Музыкальная установка">
+          <p class="gallery__autor">Антон <span>(12 часов назад)</span></p>
+          <p class="gallery__comment">Соседи будут рады!</p>
+          <p class="gallery__likes">Нравится: 666</p>
         </div>
       </article>
       <article class="gallery__item">
-        <div class="photo__container">
-          <img class="photo__image" src="img/galery-photo-3.jpg" width="280" height="180"
+        <div class="gallery__container">
+          <img class="gallery__image" src="img/galery-photo-3.jpg" width="280" height="180"
             alt="Небо через панорамное окно">
-          <p class="photo__autor">Борис <span>(20 часов назад)</span></p>
-          <p class="photo__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
-          <p class="photo__likes">Нравится: 215</p>
+          <p class="gallery__autor">Борис <span>(20 часов назад)</span></p>
+          <p class="gallery__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
+          <p class="gallery__likes">Нравится: 215</p>
         </div>
       </article>
       <article class="gallery__item">
-        <div class="photo__container">
-          <img class="photo__image" src="img/galery-photo-4.jpg" width="280" height="180" alt="Кубанская бахча">
-          <p class="photo__autor">Сергей <span>(25 часов назад)</span></p>
-          <p class="photo__comment">Самая кубанская в мире!</p>
-          <p class="photo__likes">Нравится: 4</p>
+        <div class="gallery__container">
+          <img class="gallery__image" src="img/galery-photo-4.jpg" width="280" height="180" alt="Кубанская бахча">
+          <p class="gallery__autor">Сергей <span>(25 часов назад)</span></p>
+          <p class="gallery__comment">Самая кубанская в мире!</p>
+          <p class="gallery__likes">Нравится: 4</p>
         </div>
       </article>
       <article class="gallery__item">
-        <div class="photo__container">
-          <img class="photo__image" src="img/galery-photo-5.jpg" width="280" height="180" alt="Ноги на фоне гор">
-          <p class="photo__autor">Максим <span>(40 часов назад)</span></p>
-          <p class="photo__comment">Где снег-то?</p>
-          <p class="photo__likes">Нравится: 150</p>
+        <div class="gallery__container">
+          <img class="gallery__image" src="img/galery-photo-5.jpg" width="280" height="180" alt="Ноги на фоне гор">
+          <p class="gallery__autor">Максим <span>(40 часов назад)</span></p>
+          <p class="gallery__comment">Где снег-то?</p>
+          <p class="gallery__likes">Нравится: 150</p>
         </div>
       </article>
       <article class="gallery__item">
-        <div class="photo__container">
-          <img class="photo__image" src="img/galery-photo-6.jpg" width="280" height="180"
+        <div class="gallery__container">
+          <img class="gallery__image" src="img/galery-photo-6.jpg" width="280" height="180"
             alt="Крыло самолета на закате">
-          <p class="photo__autor">Надежда <span>(45 часов назад)</span></p>
-          <p class="photo__comment">Всем GM и взаимные лайки!</p>
-          <p class="photo__likes">Нравится: 2560</p>
+          <p class="gallery__autor">Надежда <span>(45 часов назад)</span></p>
+          <p class="gallery__comment">Всем GM и взаимные лайки!</p>
+          <p class="gallery__likes">Нравится: 2560</p>
         </div>
       </article>
-      <!-- </div> -->
     </section>
     <section class="add-photo">
       <h2 class="visually-hidden">Добавление фото</h2>
@@ -106,34 +101,30 @@
         <p class="add-photo__caption">Затмите их всех! </p>
         <p class="add-photo__caption">Выкладывайте всё, что накопилось в телефоне!</p>
       </div>
-      <form class="form-photo" action="https://echo.htmlacademy.ru/">
-        <img class="form-photo__image" src="img/winter-road.jpg" width="100%" height="auto" alt="Зимняя дорога">
-        <div class="form-photo__wrapper">
+      <div class="add-photo--wrapper">
+        <form class="form-photo" action="https://echo.htmlacademy.ru/">
+          <img class="form-photo__image" src="img/winter-road.jpg" width="100%" height="auto" alt="Зимняя дорога">
+          <div class="form-photo__wrapper">
 
-          <div class="form-photo__icons">
-            <div class="photo__icons-crop photo__icons__current"></div>
-            <div class="photo__icons-fill"></div>
-            <div class="photo__icons-contrast"></div>
-          </div>
+            <div class="form-photo__icons">
+              <div class="photo__icons photo__icons-crop">
+                <div class="photo__icons--underline underline-crop"> </div>
+              </div>
+              <div class="photo__icons photo__icons-fill">
+                <div class="photo__icons--underline underline-fill"> </div>
+              </div>
+              <div class="photo__icons photo__icons-contrast">
+                <div class="photo__icons--underline underline-contrast"> </div>
+              </div>
+            </div>
 
-          <div class="form-photo__bar form-photo__crop form-photo__toggle">
-            <!-- <input class="form-photo__filter-range" type="range" min="1" max="100" name="crop" value="87"> -->
+            <div class="form-photo__button-wrapper">
+              <button class="form-photo__button" type="submit">Запостить</button>
+              <button class="form-photo__button form-photo__button--cancel" type="reset">Отмена</button>
+            </div>
           </div>
-
-          <div class="form-photo__bar form-photo__fill">
-            <!-- <input class="form-photo__filter-range" type="range" min="1" max="100" name="fill" value="14"> -->
-          </div>
-
-          <div class="form-photo__bar form-photo__brightness">
-            <!-- <input class="form-photo__filter-range" type="range" min="1" max="100" name="contrast" value="50"> -->
-          </div>
-
-          <div class="form-photo__button-wrapper">
-            <button class="form-photo__button" type="submit">Запостить</button>
-            <button class="form-photo__button form-photo__button--cancel" type="reset">Отмена</button>
-          </div>
-        </div>
-      </form>
+        </form>
+      </div>
     </section>
   </main>
   <!-- Подвал -->

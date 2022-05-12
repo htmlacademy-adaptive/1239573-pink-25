@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Пинк | Форма обратной связи</title>
   <link rel="stylesheet" href="css/style.css" type="text/css" />
 </head>
+
 <body class="page__body">
   <!-- Шапка -->
   <header class="header">
-    <div class="header__wrapper-top">
+    <div class="header__wrapper">
       <a class="header__logo" href="index.html">
         <img class="header__logo-image" src="img/logo-white-mobile.svg" width="74" height="23" alt="Приложение «Pink»">
       </a>
       <button class="nav-toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <nav class="header__nav-list">
+        <a class="nav__item" href="index.html">Главная</a>
+        <a class="nav__item" href="photo.html">Фотографии</a>
+        <a class="nav__item nav__item--current" href="form.html">Конкурс</a>
+        <a class="nav__item" href="https://htmlacademy.ru">HTML Academy</a>
+      </nav>
     </div>
-    <nav class="header__nav-list">
-      <a class="nav__item" href="index.html">Главная</a>
-      <a class="nav__item" href="photo.html">Фотографии</a>
-      <a class="nav__item nav__item--current" href="form.html">Конкурс</a>
-      <a class="nav__item" href="https://htmlacademy.ru">HTML Academy</a>
-    </nav>
   </header>
   <!-- Основной радел -->
   <main class="main">
@@ -29,8 +31,8 @@
         <h1 class="contest-promo__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
       </div>
       <p class="contest-promo__slogan">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на
-        вашу
-        бонусную карту!</p>
+        вашу бонусную карту!</p>
+      <p class="contest-promo__slogan contest-promo__slogan--second">Пожалуйста, заполните форму ниже:</p>
     </section>
     <form class="contest-form" action="https://echo.htmlacademy.ru">
       <fieldset class="contest-form__group contest-form__name">
@@ -56,34 +58,35 @@
           <input class="contest-form__checkbox" type="checkbox" name="checkbox-1" id="checkbox-1" checked>
           <label class="contest-form__achievement-label" for="checkbox-1">Сделал селфи с акулой</label>
         </p>
-        <p class="contest-form__achievement-item">
+        <p class="contest-form__achievement-item contest-form__achievement-item-beach">
           <input class="contest-form__checkbox" type="checkbox" name="checkbox-2" id="checkbox-2" checked>
           <label class="contest-form__achievement-label" for="checkbox-2">Обгорел на пляже</label>
         </p>
-        <p class="contest-form__achievement-item">
+        <p class="contest-form__achievement-item contest-form__achievement-item-chack-norris">
           <input class="contest-form__checkbox" type="checkbox" name="checkbox-3" id="checkbox-3">
           <label class="contest-form__achievement-label" for="checkbox-3">Видел Чака Норриса</label>
         </p>
-        <p class="contest-form__achievement-item">
+        <p class="contest-form__achievement-item contest-form__achievement-item-souvenir">
           <input class="contest-form__checkbox" type="checkbox" name="checkbox-4" id="checkbox-4">
           <label class="contest-form__achievement-label" for="checkbox-4">Накупил сувениров</label>
         </p>
-        <p class="contest-form__achievement-item">
+        <p class="contest-form__achievement-item contest-form__achievement-item-tower">
           <input class="contest-form__checkbox" type="checkbox" name="checkbox-5" id="checkbox-5" checked>
           <label class="contest-form__achievement-label" for="checkbox-5">Удержал башню</label>
         </p>
-        <p class="contest-form__achievement-item">
+        <p class="contest-form__achievement-item contest-form__achievement-item-hotel">
           <input class="contest-form__checkbox" type="checkbox" name="checkbox-6" id="checkbox-6">
           <label class="contest-form__achievement-label" for="checkbox-6">Разгромил отель</label>
         </p>
       </fieldset>
-      <fieldset class="contest-form__group contest-form__name">
-        <div class="contest-form__name-item">
-          <label class="contest-form__label" for="phone">Номер телефона</label>
+      <fieldset class="contest-form__group contest-form__contact">
+        <legend class="contest-form__label contest-form__label-contact">Контактная информация</legend>
+        <div class="contest-form__name-item contest-form__name-item-contact">
+          <label class="contest-form__label contest-form__label-contact-phone" for="phone">Номер телефона</label>
           <input class="contest-form__input" type="tel" name="phone" id="phone" placeholder="Номер, пожалуйста">
         </div>
-        <div class="contest-form__name-item">
-          <label class="contest-form__label" for="email">Адрес почты</label>
+        <div class="contest-form__name-item contest-form__name-item-contact contest-form__name-item-contact-mail">
+          <label class="contest-form__label contest-form__label-contact-mail" for="email">Адрес почты</label>
           <input class="contest-form__input" type="email" name="email" id="email" placeholder="Введите почту *">
         </div>
       </fieldset>
@@ -103,7 +106,7 @@
         </div>
       </fieldset>
       <fieldset class="contest-form__group contest-form__comment">
-        <legend class="contest-form__label">Опишите свои эмоции</legend>
+        <legend class="contest-form__label contest-form__label-comment">Опишите свои эмоции</legend>
         <textarea class="contest-form__comment-text"
           placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
       </fieldset>
@@ -126,4 +129,5 @@
     <a class="htmlacdademy-link" href="https://htmlacademy.ru/">Разработано</a>
   </footer>
 </body>
+
 </html>
