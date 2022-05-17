@@ -26,7 +26,6 @@
   height: 24px;
   background-color: transparent;
   border: 0;
-
 }
 
 .nav__list {
@@ -38,7 +37,6 @@
   text-align: center;
   width: auto;
   margin: auto;
-
 }
 
 .nav__item {
@@ -62,16 +60,32 @@
   left: 0;
 }
 
-
 @media (min-width: @tablet-width) {
   .logo-wrapper {
     width: 620px;
+  }
+
+  .header__logo-image {
+    width: 145px;
+    height: 40px;
+  }
+
+  .nav__toggle {
+    margin: auto 0;
   }
 }
 
 @media (min-width: @desktop-width) {
   .header__wrapper {
     width: 940px;
+  }
+
+  .logo-wrapper {
+    width: 280px;
+  }
+
+  .header__logo-image {
+    width: 147px;
   }
 
   .nav__toggle {
@@ -93,5 +107,4 @@
     border: none;
     text-transform: initial;
   }
-
 }
