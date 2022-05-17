@@ -6,17 +6,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Пинк | Фотогалерея</title>
   <link rel="stylesheet" href="css/style.css" type="text/css" />
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
   <!-- Шапка -->
   <header class="header">
     <div class="header__wrapper">
+      <div class="logo-wrapper">
       <a class="header__logo" href="index.html">
         <img class="header__logo-image" src="img/logo-white-mobile.svg" width="74" height="23" alt="Приложение «Pink»">
       </a>
       <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <nav class="nav__list nav__list--closed">
+    </div>
+      <nav class="nav__list nav__list--closed nav__list--desktop">
         <a class="nav__item" href="index.html">Главная</a>
         <a class="nav__item nav__item--current" href="photo.html">Фотографии</a>
         <a class="nav__item" href="form.html">Конкурс</a>
