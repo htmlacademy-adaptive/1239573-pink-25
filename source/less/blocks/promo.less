@@ -2,12 +2,13 @@
   background-color: @darkest-blue;
   background-image: url("../img/back-mobile.jpg");
   background-size: cover;
+
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/back-mobile@2x.jpg");
+  }
 }
 
-@media (min-resolution: 2dppx) {
-  background-image: url("../img/back-mobile@2x.jpg");
-  // background-size: 1338px auto;
-}
 
 .promo__wrapper {
   display: flex;
@@ -29,22 +30,34 @@
 .promo__title::before {
   content: "";
   position: absolute;
-  background-image: url("../img/phone.png");
+  background-image: url("../img/phone-mobile.png");
   background-repeat: no-repeat;
   width: 260px;
   height: 300px;
   top: 77px;
   left: -10px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/phone-mobile@2x.png");
+    width: 260px;
+    height: 300px;
+  }
+
 }
 
 .promo__title::after {
   content: "";
   position: absolute;
-  background-image: url("../img/screen.png");
+  background-image: url("../img/screen-mobile.jpg");
   width: 112px;
   height: 200px;
   top: 107px;
   left: 94px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/screen-mobile@2x.jpg");
+  }
+
 }
 
 .promo__devices {
@@ -92,6 +105,15 @@
 }
 
 @media (min-width: @tablet-width) {
+  .promo {
+    background-image: url("../img/back-tablet.jpg");
+
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-tablet@2x.jpg");
+    }
+  }
+
   .promo__title {
     margin-right: auto;
     margin-bottom: 0;
@@ -114,27 +136,46 @@
   .promo__title::before {
     content: "";
     position: absolute;
-    background-image: url("../img/phone.png");
+    background-image: url("../img/phone-tablet.png");
     background-repeat: no-repeat;
     width: 320px;
     height: 286px;
     top: 74px;
     left: 325px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/phone-tablet@2x.png");
+    }
+
   }
 
   .promo__title::after {
     content: "";
     position: absolute;
-    background-image: url("../img/screen.png");
+    background-image: url("../img/screen-tablet.jpg");
     background-size: cover;
     width: 112px;
     height: 200px;
     top: 105px;
     left: 429px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/screen-tablet@2x.jpg");
+    }
+
   }
 }
 
 @media (min-width: @desktop-width) {
+  .promo {
+    background-image: url("../img/back-desktop.jpg");
+
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-desktop@2x.jpg");
+    }
+  }
+
   .promo__title::before {
     content: "";
     position: absolute;
