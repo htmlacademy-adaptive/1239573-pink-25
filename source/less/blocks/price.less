@@ -32,6 +32,32 @@
   position: relative;
 }
 
+.price__title--hit::before {
+  content: "";
+  position: absolute;
+  width: 74px;
+  height: 74px;
+  background-color: @special-pink;
+  clip-path: polygon(50% 0, 100% 0, 0 100%, 0 50%);
+  left: 0;
+  top: 0;
+}
+.price__title--hit::after {
+  content: "Хит";
+  font-size: 14px;
+  text-align: center;
+  line-height: 14px;
+  font-weight: 400;
+  background-color: @special-pink;
+  position: absolute;
+  left: 11px;
+  transform: rotate(-45deg);
+  z-index: 1;
+  width: 30px;
+  top: 22px;
+
+}
+
 .price__title span {
   display: flex;
   flex-direction: column;
@@ -45,11 +71,11 @@
   font-weight: 400;
   font-size: 14px;
   color: @dark-blue;
-  height: 59px;
+  // height: 59px;
   text-transform: uppercase;
   text-align: left;
   border: 2px solid @light-grey;
-  padding-left: 20px;
+  padding: 20px;
   position: relative;
 }
 
@@ -83,7 +109,6 @@
   .price__value-empty {
     display: block;
     background-color: @basic-white;
-    // border: none;
   }
 
   .price__value--no,
@@ -94,5 +119,12 @@
   .price__value--no::after,
   .price__value--yes::after {
     left: 50%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .price__value-empty {
+    font-size: 18px;
+    padding: 20px;
   }
 }
