@@ -1,9 +1,18 @@
+.contest-promo {
+  margin-top: -71px;
+}
 .contest-promo__header {
   background-color: @dark-blue;
   background-image: url("../img/back-mobile.jpg");
   background-size: cover;
-  padding: 36px 20px 51px 20px;
+  background-repeat: no-repeat;
+  padding: 107px 20px 51px 20px;
   margin-bottom: 55px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/back-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
 }
 
 .contest-promo__title {
@@ -204,6 +213,23 @@
 }
 
 @media (min-width: @tablet-width) {
+  .contest-promo {
+    margin-top: -88px;
+  }
+
+  .contest-promo__header {
+    padding-top: 124px;
+    background-size: 660px auto;
+    background-size: cover;
+    background-image: url("../img/back-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-tablet@2x.jpg");
+      background-size: 660px auto;
+      background-size: cover;
+    }
+  }
+
   .contest-promo__title {
     font-size: 50px;
     line-height: 68px;
@@ -336,6 +362,18 @@
 
   .contest-promo {
     margin-bottom: 40px;
+  }
+
+  .contest-promo__header {
+    background-size: 1200px auto;
+    background-size: cover;
+    background-image: url("../img/back-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-desktop@2x.jpg");
+      background-size: 1200px auto;
+      background-size: cover;
+    }
   }
   .contest-promo__title {
     width: 940px;

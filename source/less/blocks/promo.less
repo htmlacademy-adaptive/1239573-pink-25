@@ -2,12 +2,17 @@
   background-color: @darkest-blue;
   background-image: url("../img/back-mobile.jpg");
   background-size: cover;
+  background-position: 50% -30px;
+  background-repeat: no-repeat;
+  margin-top: -71px;
+  padding-top: 71px;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/back-mobile@2x.jpg");
+    background-size: 320px auto;
+    background-size: cover;
   }
 }
-
 
 .promo__wrapper {
   display: flex;
@@ -31,15 +36,14 @@
   position: absolute;
   background-image: url("../img/phone-mobile.png");
   background-repeat: no-repeat;
-  width: 260px;
-  height: 300px;
-  top: 77px;
+  width: 320px;
+  height: 286px;
+  top: 75px;
   left: -10px;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/phone-mobile@2x.png");
-    width: 260px;
-    height: 300px;
+    background-size: 320px auto;
   }
 }
 
@@ -47,13 +51,15 @@
   content: "";
   position: absolute;
   background-image: url("../img/screen-mobile.jpg");
-  width: 112px;
-  height: 200px;
+  background-repeat: no-repeat;
+  width: 111px;
+  height: 197px;
   top: 107px;
   left: 94px;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/screen-mobile@2x.jpg");
+    background-size: 112px auto;
   }
 }
 
@@ -104,9 +110,15 @@
 @media (min-width: @tablet-width) {
   .promo {
     background-image: url("../img/back-tablet.jpg");
+    margin-top: -87px;
+    padding-top: 87px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/back-tablet@2x.jpg");
+      background-size: 660px auto;
+      background-repeat: no-repeat;
+      background-size: cover;
+
     }
   }
 
@@ -114,6 +126,8 @@
     margin-right: auto;
     margin-bottom: 0;
     margin-top: 0;
+    font-size: 40px;
+    line-height: 48px;
   }
 
   .promo__devices {
@@ -121,12 +135,22 @@
     display: flex;
     flex-direction: column;
     width: 300px;
+    z-index: 0;
   }
 
   .promo__wrapper {
     width: 620px;
-    padding: 50px 0;
+    padding: 100px 0 120px;
     align-items: flex-start;
+  }
+
+  .promo__devices-wrapper {
+    margin: 40px auto;
+  }
+
+  .promo__content {
+    font-size: 18px;
+    padding: 0;
   }
 
   .promo__title::before {
@@ -134,13 +158,14 @@
     position: absolute;
     background-image: url("../img/phone-tablet.png");
     background-repeat: no-repeat;
-    width: 320px;
-    height: 286px;
-    top: 74px;
-    left: 325px;
+    width: 660px;
+    height: 545px;
+    top: -15px;
+    left: -15px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/phone-tablet@2x.png");
+      background-size: 660px auto;
     }
   }
 
@@ -149,13 +174,15 @@
     position: absolute;
     background-image: url("../img/screen-tablet.jpg");
     background-size: cover;
-    width: 112px;
-    height: 200px;
-    top: 105px;
-    left: 429px;
+    background-repeat: no-repeat;
+    width: 195px;
+    height: 346px;
+    top: 39px;
+    left: 356px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/screen-tablet@2x.jpg");
+      background-size: 195px auto;
     }
   }
 }
@@ -170,6 +197,11 @@
     }
   }
 
+  .promo__wrapper {
+    width: 940px;
+    padding: 110px 0 110px;
+  }
+
   .promo__title {
     font-size: 50px;
     line-height: 68px;
@@ -182,11 +214,12 @@
     background-repeat: no-repeat;
     width: 1050px;
     height: 645px;
-    top: 0;
+    top: 23px;
     left: 55px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/phone-desktop@2x.png");
+      background-size: 1050px auto;
     }
   }
 
@@ -195,9 +228,19 @@
     position: absolute;
     background-image: url("../img/screen-desktop.jpg");
     background-size: cover;
-    width: 112px;
-    height: 200px;
-    top: 105px;
-    left: 529px;
+    background-repeat: no-repeat;
+    width: 230px;
+    height: 408px;
+    top: 88px;
+    left: 625px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/screen-desktop@2x.jpg");
+      background-size: 230px auto;
+    }
+  }
+
+  .promo__devices-wrapper {
+    margin: 60px auto;
   }
 }

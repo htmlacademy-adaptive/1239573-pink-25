@@ -16,18 +16,25 @@
   <!-- Шапка -->
   <header class="header">
     <div class="header__wrapper">
-      <div class="logo-wrapper">
-      <a class="header__logo" href="index.html">
-        <img class="header__logo-image" src="img/logo-white-mobile.svg" width="74" height="23" alt="Приложение «Pink»">
-      </a>
-      <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-    </div>
-      <nav class="nav__list nav__list--closed nav__list--desktop">
-        <a class="nav__item" href="index.html">Главная</a>
-        <a class="nav__item nav__item--current" href="photo.html">Фотографии</a>
-        <a class="nav__item" href="form.html">Конкурс</a>
-        <a class="nav__item" href="https://htmlacademy.ru">HTML Academy</a>
-      </nav>
+      <div class="header-container">
+        <div class="logo-wrapper">
+          <a class="header__logo" href="index.html">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logotype-white-desktop.svg">
+              <source media="(min-width: 660px)" srcset="img/logotype-white-tablet.svg">
+              <img class="header__logo-image" src="img/logo-white-mobile.svg" width="74" height="23"
+                alt="Приложение «Pink»">
+            </picture>
+          </a>
+          <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        </div>
+        <nav class="nav__list nav__list--closed">
+          <a class="nav__item" href="index.html">Главная</a>
+          <a class="nav__item nav__item--current" href="photo.html">Фотографии</a>
+          <a class="nav__item" href="form.html">Конкурс</a>
+          <a class="nav__item" href="https://htmlacademy.ru">HTML Academy</a>
+        </nav>
+      </div>
     </div>
   </header>
   <!-- Основной радел -->
@@ -39,7 +46,11 @@
       <p class="photo-promo__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает
         ваших?
       </p>
-      <img class="photo__image" src="img/panorama.jpg" width="320" height="137" alt="Подвесной мост в Красной Поляне">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/panorama-desktop.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+        <source media="(min-width: 660px)" srcset="img/panorama-tablet.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+        <img class="photo__image" src="img/panorama-mobile.jpg" width="320" height="137" alt="Подвесной мост в Красной Поляне">
+      </picture>
       <div class="photo__container">
         <p class="photo__autor">Анна <span>(5 минут назад)</span></p>
         <p class="photo__comment">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в
@@ -52,7 +63,12 @@
       <h2 class="visually-hidden">Галлерея работ</h2>
       <article class="gallery__item">
         <div class="gallery__container">
-          <img class="gallery__image" src="img/galery-photo-1.jpg" width="280" height="180" alt="Фотосессия Шкоды">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+            <img class="gallery__image" src="img/photo-1-mobile.jpg" width="280" height="180" alt="Фотосессия Шкоды">
+          </picture>
+
           <p class="gallery__autor">Левон <span>(5 часов назад)</span></p>
           <p class="gallery__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
           <p class="gallery__likes">Нравится: 356</p>
@@ -60,7 +76,12 @@
       </article>
       <article class="gallery__item">
         <div class="gallery__container">
-          <img class="gallery__image" src="img/galery-photo-2.jpg" width="280" height="180" alt="Музыкальная установка">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+            <img class="gallery__image" src="img/photo-2-mobile.jpg" width="280" height="180" alt="Музыкальная установка">
+          </picture>
+
           <p class="gallery__autor">Антон <span>(12 часов назад)</span></p>
           <p class="gallery__comment">Соседи будут рады!</p>
           <p class="gallery__likes">Нравится: 666</p>
@@ -68,8 +89,13 @@
       </article>
       <article class="gallery__item">
         <div class="gallery__container">
-          <img class="gallery__image" src="img/galery-photo-3.jpg" width="280" height="180"
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+            <img class="gallery__image" src="img/photo-3-mobile.jpg" width="280" height="180"
             alt="Небо через панорамное окно">
+          </picture>
+
           <p class="gallery__autor">Борис <span>(20 часов назад)</span></p>
           <p class="gallery__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
           <p class="gallery__likes">Нравится: 215</p>
@@ -77,7 +103,12 @@
       </article>
       <article class="gallery__item">
         <div class="gallery__container">
-          <img class="gallery__image" src="img/galery-photo-4.jpg" width="280" height="180" alt="Кубанская бахча">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/photo-4-tablet.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
+            <img class="gallery__image" src="img/photo-4-mobile.jpg" width="280" height="180" alt="Кубанская бахча">
+          </picture>
+
           <p class="gallery__autor">Сергей <span>(25 часов назад)</span></p>
           <p class="gallery__comment">Самая кубанская в мире!</p>
           <p class="gallery__likes">Нравится: 4</p>
@@ -85,7 +116,12 @@
       </article>
       <article class="gallery__item">
         <div class="gallery__container">
-          <img class="gallery__image" src="img/galery-photo-5.jpg" width="280" height="180" alt="Ноги на фоне гор">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-5-desktop.jpg 1x, img/photo-5-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/photo-5-tablet.jpg 1x, img/photo-5-tablet@2x.jpg 2x">
+            <img class="gallery__image" src="img/photo-5-mobile.jpg" width="280" height="180" alt="Ноги на фоне гор">
+          </picture>
+
           <p class="gallery__autor">Максим <span>(40 часов назад)</span></p>
           <p class="gallery__comment">Где снег-то?</p>
           <p class="gallery__likes">Нравится: 150</p>
@@ -93,8 +129,13 @@
       </article>
       <article class="gallery__item">
         <div class="gallery__container">
-          <img class="gallery__image" src="img/galery-photo-6.jpg" width="280" height="180"
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-6-desktop.jpg 1x, img/photo-6-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/photo-6-tablet.jpg 1x, img/photo-6-tablet@2x.jpg 2x">
+            <img class="gallery__image" src="img/photo-6-mobile.jpg" width="280" height="180"
             alt="Крыло самолета на закате">
+          </picture>
+
           <p class="gallery__autor">Надежда <span>(45 часов назад)</span></p>
           <p class="gallery__comment">Всем GM и взаимные лайки!</p>
           <p class="gallery__likes">Нравится: 2560</p>
@@ -109,7 +150,11 @@
       </div>
       <div class="add-photo--wrapper">
         <form class="form-photo" action="https://echo.htmlacademy.ru/">
-          <img class="form-photo__image" src="img/winter-road.jpg" width="100%" height="auto" alt="Зимняя дорога">
+          <picture>
+            <source media="(min-width: 660px)" srcset="img/winter-road-tablet.jpg 1x, img/winter-road-tablet@2x.jpg 2x">
+            <img class="form-photo__image" src="img/winter-road-mobile.jpg" width="100%" height="auto" alt="Зимняя дорога">
+          </picture>
+
           <div class="form-photo__wrapper">
 
             <div class="form-photo__icons">
@@ -136,7 +181,11 @@
   <!-- Подвал -->
   <footer class="footer">
     <a class="footer__logo" href="index.html">
-      <img class="footer__logo-image" src="img/logo-dark-mobile.svg" width="147" height="40" alt="Приложение «Pink»">
+      <!-- <img class="footer__logo-image" src="img/logo-dark-mobile.svg" width="147" height="40" alt="Приложение «Pink»"> -->
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/logotype-blue-desktop.svg">
+        <img class="footer__logo-image" src="img/logo-dark-mobile.svg" width="147" height="40" alt="Приложение «Pink»">
+      </picture>
     </a>
     <nav class="social__list">
       <a class="social__item social__item--vk" href="#">VK</a>

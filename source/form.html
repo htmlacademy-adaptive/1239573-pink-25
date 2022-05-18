@@ -16,19 +16,25 @@
   <!-- Шапка -->
   <header class="header">
     <div class="header__wrapper">
-      <div class="logo-wrapper">
-        <a class="header__logo" href="index.html">
-          <img class="header__logo-image" src="img/logo-white-mobile.svg" width="74" height="23"
-            alt="Приложение «Pink»">
-        </a>
-        <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <div class="header-container">
+        <div class="logo-wrapper">
+          <a class="header__logo" href="index.html">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logotype-white-desktop.svg">
+              <source media="(min-width: 660px)" srcset="img/logotype-white-tablet.svg">
+              <img class="header__logo-image" src="img/logo-white-mobile.svg" width="74" height="23"
+                alt="Приложение «Pink»">
+            </picture>
+          </a>
+          <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        </div>
+        <nav class="nav__list nav__list--closed">
+          <a class="nav__item" href="index.html">Главная</a>
+          <a class="nav__item" href="photo.html">Фотографии</a>
+          <a class="nav__item nav__item--current" href="form.html">Конкурс</a>
+          <a class="nav__item" href="https://htmlacademy.ru">HTML Academy</a>
+        </nav>
       </div>
-      <nav class="nav__list nav__list--closed nav__list--desktop">
-        <a class="nav__item" href="index.html">Главная</a>
-        <a class="nav__item" href="photo.html">Фотографии</a>
-        <a class="nav__item nav__item--current" href="form.html">Конкурс</a>
-        <a class="nav__item" href="https://htmlacademy.ru">HTML Academy</a>
-      </nav>
     </div>
   </header>
   <!-- Основной радел -->
@@ -126,7 +132,11 @@
   <!-- Подвал -->
   <footer class="footer">
     <a class="footer__logo" href="index.html">
-      <img class="footer__logo-image" src="img/logo-dark-mobile.svg" width="147" height="40" alt="Приложение «Pink»">
+      <!-- <img class="footer__logo-image" src="img/logo-dark-mobile.svg" width="147" height="40" alt="Приложение «Pink»"> -->
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/logotype-blue-desktop.svg">
+        <img class="footer__logo-image" src="img/logo-dark-mobile.svg" width="147" height="40" alt="Приложение «Pink»">
+      </picture>
     </a>
     <nav class="social__list">
       <a class="social__item social__item--vk" href="#">VK</a>
