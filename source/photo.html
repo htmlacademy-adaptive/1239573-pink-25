@@ -46,11 +46,14 @@
       <p class="photo-promo__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает
         ваших?
       </p>
-      <picture>
-        <source media="(min-width: 1200px)" srcset="img/panorama-desktop.jpg 1x, img/panorama-desktop@2x.jpg 2x">
-        <source media="(min-width: 660px)" srcset="img/panorama-tablet.jpg 1x, img/panorama-tablet@2x.jpg 2x">
-        <img class="photo__image" src="img/panorama-mobile.jpg" width="320" height="137" alt="Подвесной мост в Красной Поляне">
-      </picture>
+      <div class="picture-container">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/panorama-desktop.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+          <source media="(min-width: 660px)" srcset="img/panorama-tablet.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+          <img class="photo__image" src="img/panorama-mobile.jpg" width="320" height="137"
+            alt="Подвесной мост в Красной Поляне">
+        </picture>
+      </div>
       <div class="photo__container">
         <p class="photo__autor">Анна <span>(5 минут назад)</span></p>
         <p class="photo__comment">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в
@@ -79,7 +82,8 @@
           <picture>
             <source media="(min-width: 1200px)" srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
             <source media="(min-width: 660px)" srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
-            <img class="gallery__image" src="img/photo-2-mobile.jpg" width="280" height="180" alt="Музыкальная установка">
+            <img class="gallery__image" src="img/photo-2-mobile.jpg" width="280" height="180"
+              alt="Музыкальная установка">
           </picture>
 
           <p class="gallery__autor">Антон <span>(12 часов назад)</span></p>
@@ -93,7 +97,7 @@
             <source media="(min-width: 1200px)" srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
             <source media="(min-width: 660px)" srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
             <img class="gallery__image" src="img/photo-3-mobile.jpg" width="280" height="180"
-            alt="Небо через панорамное окно">
+              alt="Небо через панорамное окно">
           </picture>
 
           <p class="gallery__autor">Борис <span>(20 часов назад)</span></p>
@@ -133,7 +137,7 @@
             <source media="(min-width: 1200px)" srcset="img/photo-6-desktop.jpg 1x, img/photo-6-desktop@2x.jpg 2x">
             <source media="(min-width: 660px)" srcset="img/photo-6-tablet.jpg 1x, img/photo-6-tablet@2x.jpg 2x">
             <img class="gallery__image" src="img/photo-6-mobile.jpg" width="280" height="180"
-            alt="Крыло самолета на закате">
+              alt="Крыло самолета на закате">
           </picture>
 
           <p class="gallery__autor">Надежда <span>(45 часов назад)</span></p>
@@ -152,7 +156,8 @@
         <form class="form-photo" action="https://echo.htmlacademy.ru/">
           <picture>
             <source media="(min-width: 660px)" srcset="img/winter-road-tablet.jpg 1x, img/winter-road-tablet@2x.jpg 2x">
-            <img class="form-photo__image" src="img/winter-road-mobile.jpg" width="100%" height="auto" alt="Зимняя дорога">
+            <img class="form-photo__image" src="img/winter-road-mobile.jpg" width="100%" height="auto"
+              alt="Зимняя дорога">
           </picture>
 
           <div class="form-photo__wrapper">

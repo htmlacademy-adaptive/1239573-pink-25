@@ -56,6 +56,23 @@
   width: 280px;
 }
 
+.picture-container {
+  position: relative;
+}
+
+.picture-container::before {
+  content: "Панорама дня";
+  position: absolute;
+  background-color: @special-pink;
+  color: @basic-white;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 24px;
+  padding: 5px 20px;
+  right: 20px;
+}
+
 .photo__autor {
   font-weight: 700;
   font-size: 14px;
@@ -136,7 +153,9 @@
     width: 660px;
     height: 509px;
   }
-
+  .picture-container::before {
+    top: 60px;
+  }
   .photo__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -186,6 +205,10 @@
   .photo__image {
     width: 1020px;
     height: 506px;
+  }
+
+  .picture-container::before {
+    right: 130px;
   }
 
   .photo__container {
