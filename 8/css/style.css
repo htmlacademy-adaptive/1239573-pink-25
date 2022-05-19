@@ -95,7 +95,7 @@ img {
   font-size: 18px;
   padding: 25px 0;
   background-color: #283645;
-  box-shadow: 0px 1px 0px #000000, inset 0px 1px 0px rgba(255, 255, 255, 0.15);
+  box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
   border-top: 1px solid #000000;
 }
 .nav__list--closed {
@@ -195,22 +195,6 @@ img {
     background-size: 320px auto;
   }
 }
-.promo__title::after {
-  content: "";
-  position: absolute;
-  background-image: url("../img/screen-mobile.jpg");
-  background-repeat: no-repeat;
-  width: 111px;
-  height: 197px;
-  top: 107px;
-  left: 94px;
-}
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
-  .promo__title::after {
-    background-image: url("../img/screen-mobile@2x.jpg");
-    background-size: 112px auto;
-  }
-}
 .promo__devices {
   padding-top: 28px;
   background-color: #1d2631;
@@ -292,17 +276,6 @@ img {
     top: -15px;
     left: -15px;
   }
-  .promo__title::after {
-    content: "";
-    position: absolute;
-    background-image: url("../img/screen-tablet.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 195px;
-    height: 346px;
-    top: 39px;
-    left: 356px;
-  }
 }
 @media (min-width: 660px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 660px) and (min-resolution: 2dppx) {
   .promo {
@@ -316,12 +289,6 @@ img {
   .promo__title::before {
     background-image: url("../img/phone-tablet@2x.png");
     background-size: 660px auto;
-  }
-}
-@media (min-width: 660px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 660px) and (min-resolution: 2dppx) {
-  .promo__title::after {
-    background-image: url("../img/screen-tablet@2x.jpg");
-    background-size: 195px auto;
   }
 }
 @media (min-width: 1200px) {
@@ -341,21 +308,10 @@ img {
     position: absolute;
     background-image: url("../img/phone-desktop.png");
     background-repeat: no-repeat;
-    width: 1050px;
+    width: 587px;
     height: 645px;
     top: 23px;
-    left: 55px;
-  }
-  .promo__title::after {
-    content: "";
-    position: absolute;
-    background-image: url("../img/screen-desktop.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 230px;
-    height: 408px;
-    top: 88px;
-    left: 625px;
+    left: 330px;
   }
   .promo__devices-wrapper {
     margin: 60px auto;
@@ -369,13 +325,7 @@ img {
 @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 2dppx) {
   .promo__title::before {
     background-image: url("../img/phone-desktop@2x.png");
-    background-size: 1050px auto;
-  }
-}
-@media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 2dppx) {
-  .promo__title::after {
-    background-image: url("../img/screen-desktop@2x.jpg");
-    background-size: 230px auto;
+    background-size: 587px auto;
   }
 }
 .advantages__wrapper {
@@ -403,7 +353,7 @@ img {
   width: 100%;
   height: 32px;
   background-color: #ffffff;
-  position: absolute ;
+  position: absolute;
   -webkit-clip-path: polygon(0 0, 100% 0, 0 100%);
           clip-path: polygon(0 0, 100% 0, 0 100%);
 }
@@ -427,7 +377,7 @@ img {
   background-repeat: no-repeat;
   background-position: 56% 50%;
   width: 157px;
-  height: 320px;
+  height: 279px;
   left: 22%;
   bottom: 0;
 }
@@ -435,23 +385,6 @@ img {
   .advantages__item--friends::before {
     background-image: url("../img/iphone-3@2x.png");
     background-size: 157px auto;
-  }
-}
-.advantages__item--friends::after {
-  content: "";
-  position: absolute;
-  background-image: url("../img/iphone-screen-3.jpg");
-  background-repeat: no-repeat;
-  background-position: 56% 50%;
-  width: 136px;
-  height: 245px;
-  left: 71px;
-  bottom: 37px;
-}
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
-  .advantages__item--friends::after {
-    background-image: url("../img/iphone-screen-3@2x.jpg");
-    background-size: 136px auto;
   }
 }
 .advantages__item h3 {
@@ -470,16 +403,17 @@ img {
   }
   .advantages__title--bottom {
     width: 400px;
+    margin-bottom: 40px;
   }
   .advantages__list {
     width: 640px;
-    padding-bottom: 115px;
+    padding-bottom: 0;
     display: flex;
     flex-direction: column;
   }
   .advantages__item {
     text-align: left;
-    width: 310px;
+    width: 320px;
     margin-right: 0;
     margin-bottom: 0;
   }
@@ -495,32 +429,15 @@ img {
     background-image: url("../img/iphone-3-tablet.png");
     background-repeat: no-repeat;
     width: 268px;
-    height: 547px;
-    left: 10px;
-    top: 0;
-  }
-  .advantages__item--friends::after {
-    content: "";
-    position: absolute;
-    background-image: url("../img/iphone-screen-3-tablet.jpg");
-    background-repeat: no-repeat;
-    background-position: 56% 50%;
-    width: 241px;
-    height: 425px;
-    left: 25px;
-    top: 61px;
+    height: 484px;
+    left: 15px;
+    top: inherit;
   }
 }
 @media (min-width: 660px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 660px) and (min-resolution: 2dppx) {
   .advantages__item--friends::before {
     background-image: url("../img/iphone-3-tablet@2x.png");
     background-size: 268px auto;
-  }
-}
-@media (min-width: 660px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 660px) and (min-resolution: 2dppx) {
-  .advantages__item--friends::after {
-    background-image: url("../img/iphone-screen-3-tablet@2x.jpg");
-    background-size: 241px auto;
   }
 }
 @media (min-width: 1200px) {
@@ -552,9 +469,9 @@ img {
     position: absolute;
     background-image: url("../img/iphone-3-desktop.png");
     background-repeat: no-repeat;
-    width: 186px;
-    height: 382px;
-    left: 40px;
+    width: 308px;
+    height: 314px;
+    left: -20px;
     top: -430px;
   }
   .advantages__item::after {
@@ -562,9 +479,9 @@ img {
     position: absolute;
     background-repeat: no-repeat;
     width: 169px;
-    height: 298px;
-    left: 49px;
-    top: -388px;
+    height: 263px;
+    left: 47px;
+    top: -392px;
   }
   .advantages__item--fun::after {
     background-image: url("../img/iphone-screen-1-desktop.jpg");
@@ -586,7 +503,7 @@ img {
 @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 2dppx) {
   .advantages__item::before {
     background-image: url("../img/iphone-3-desktop@2x.png");
-    background-size: 186px auto;
+    background-size: 308px auto;
   }
 }
 @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 2dppx) {
@@ -636,7 +553,7 @@ img {
   .science__wrapper::before {
     width: 238px;
     height: 276px;
-    background: url(../img/timer.svg ) no-repeat scroll;
+    background: url("../img/timer.svg") no-repeat scroll;
     content: "";
     position: absolute;
     left: -300px;
@@ -823,6 +740,7 @@ img {
   position: relative;
 }
 .price__value {
+  display: table-cell;
   font-weight: 400;
   font-size: 14px;
   color: #283645;
@@ -1089,6 +1007,21 @@ img {
   position: relative;
   width: 280px;
 }
+.picture-container {
+  position: relative;
+}
+.picture-container::before {
+  content: "Панорама дня";
+  position: absolute;
+  background-color: #d22856;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 24px;
+  padding: 5px 20px;
+  right: 20px;
+}
 .photo__autor {
   font-weight: 700;
   font-size: 14px;
@@ -1153,6 +1086,9 @@ img {
     width: 660px;
     height: 509px;
   }
+  .picture-container::before {
+    top: 60px;
+  }
   .photo__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1196,6 +1132,9 @@ img {
   .photo__image {
     width: 1020px;
     height: 506px;
+  }
+  .picture-container::before {
+    right: 130px;
   }
   .photo__container {
     width: 940px;
@@ -1821,13 +1760,11 @@ img {
   }
   .contest-form__group {
     width: 640px;
+    margin-bottom: 65px;
+    background-color: #ffffff;
   }
   .contest-form__name {
     order: -1;
-  }
-  .contest-form__group {
-    margin-bottom: 65px;
-    background-color: #ffffff;
   }
   .contest-form__devices {
     order: 0;
@@ -1875,7 +1812,7 @@ img {
   .contest-form__label-contact-phone::before {
     content: "";
     position: absolute;
-    background-image: url(../img/phone-icon.svg);
+    background-image: url("../img/phone-icon.svg");
     background-repeat: no-repeat;
     width: 20px;
     height: 19px;
@@ -1885,7 +1822,7 @@ img {
   .contest-form__label-contact-mail::before {
     content: "";
     position: absolute;
-    background-image: url(../img/mail-icon.svg);
+    background-image: url("../img/mail-icon.svg");
     background-repeat: no-repeat;
     width: 18px;
     height: 13px;
