@@ -71,6 +71,11 @@ img {
   justify-content: space-between;
   margin: auto;
 }
+.logo-tablet,
+.logo-desktop,
+.footer__logo-desktop {
+  display: none;
+}
 .nav__toggle {
   background-image: url("../img/open-menu-btn.svg");
   width: 50px;
@@ -114,6 +119,13 @@ img {
     width: 145px;
     height: 40px;
   }
+  .logo-mobile,
+  .logo-desktop {
+    display: none;
+  }
+  .logo-tablet {
+    display: block;
+  }
   .nav__toggle {
     margin: auto 0;
   }
@@ -127,6 +139,15 @@ img {
   }
   .header__logo-image {
     width: 147px;
+  }
+  .logo-mobile,
+  .logo-tablet,
+  .footer__logo-mobile {
+    display: none;
+  }
+  .logo-desktop,
+  .footer__logo-desktop {
+    display: block;
   }
   .nav__toggle {
     display: none;

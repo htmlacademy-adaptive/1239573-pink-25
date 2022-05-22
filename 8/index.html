@@ -15,18 +15,24 @@
 </head>
 
 <body class="page__body">
+
   <!-- Шапка -->
   <header class="header">
     <div class="header__wrapper">
       <div class="header-container">
         <div class="logo-wrapper">
           <a class="header__logo" href="index.html">
-            <picture>
+            <!-- <picture>
               <source media="(min-width: 1200px)" srcset="img/logotype-white-desktop.svg">
               <source media="(min-width: 660px)" srcset="img/logotype-white-tablet.svg">
               <img class="header__logo-image" src="img/logo-white-mobile.svg" width="74" height="23"
                 alt="Приложение «Pink»">
-            </picture>
+            </picture> -->
+            <svg class="header__logo-image" width="74" height="23">
+              <use class="logo-mobile" href="img/sprite.svg#logo-mobile"></use>
+              <use class="logo-tablet" href="img/sprite.svg#logo-tablet"></use>
+              <use class="logo-desktop" href="img/sprite.svg#logo-desktop"></use>
+            </svg>
           </a>
           <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         </div>
@@ -49,13 +55,22 @@
           <a class="promo__button" href="#">Скачать приложение</a>
           <div class="promo__devices-wrapper">
             <a class="promo__item promo__item--apple" href="#">Логотип Apple
-              <img src="img/apple-logo.svg" width="47" height="56" alt="Логотип Apple">
+              <!-- <img src="img/apple-logo.svg" width="47" height="56" alt="Логотип Apple"> -->
+              <svg width="47" height="56">
+                <use href="img/sprite.svg#logo-apple"></use>
+              </svg>
             </a>
             <a class="promo__item promo__item--android" href="#">Логотип Android
-              <img src="img/android-logo.svg" width="43" height="47" alt="Логотип Android">
+              <!-- <img src="img/android-logo.svg" width="43" height="47" alt="Логотип Android"> -->
+              <svg width="43" height="47">
+                <use href="img/sprite.svg#logo-android"></use>
+              </svg>
             </a>
             <a class="promo__item promo__item--microsoft" href="#">Логотип Microsoft
-              <img src="img/microsoft-logo.svg" width="44" height="41" alt="Логотип Microsoft">
+              <!-- <img src="img/microsoft-logo.svg" width="44" height="41" alt="Логотип Microsoft"> -->
+              <svg width="44" height="41">
+                <use href="img/sprite.svg#logo-microsoft"></use>
+              </svg>
             </a>
           </div>
           <p class="promo__content">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
@@ -190,10 +205,14 @@
   <!-- Подвал -->
   <footer class="footer">
     <a class="footer__logo" href="index.html">
-      <picture>
+      <!-- <picture>
         <source media="(min-width: 1200px)" srcset="img/logotype-blue-desktop.svg">
         <img class="footer__logo-image" src="img/logo-dark-mobile.svg" width="147" height="40" alt="Приложение «Pink»">
-      </picture>
+      </picture> -->
+      <svg class="footer__logo-image" width="147" height="40">
+        <use class="footer__logo-mobile" href="img/sprite.svg#footer-logo-mobile"></use>
+        <use class="footer__logo-desktop" href="img/sprite.svg#footer-logo-desktop"></use>
+      </svg>
     </a>
     <nav class="social__list">
       <a class="social__item social__item--vk" href="#">VK</a>
