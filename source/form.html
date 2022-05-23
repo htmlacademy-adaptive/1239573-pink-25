@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Пинк | Форма обратной связи</title>
-  <link rel="stylesheet" href="css/style.css" type="text/css" />
+  <link rel="stylesheet" href="css/style.min.css" type="text/css" />
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png">
@@ -19,12 +19,17 @@
       <div class="header-container">
         <div class="logo-wrapper">
           <a class="header__logo" href="index.html">
-            <picture>
+            <!-- <picture>
               <source media="(min-width: 1200px)" srcset="img/logotype-white-desktop.svg">
               <source media="(min-width: 660px)" srcset="img/logotype-white-tablet.svg">
               <img class="header__logo-image" src="img/logo-white-mobile.svg" width="74" height="23"
                 alt="Приложение «Pink»">
-            </picture>
+            </picture> -->
+            <svg class="header__logo-image" width="74" height="23">
+              <use class="logo-mobile" href="img/sprite.svg#logo-white-mobile"></use>
+              <use class="logo-tablet" href="img/sprite.svg#logotype-white-tablet"></use>
+              <use class="logo-desktop" href="img/sprite.svg#logotype-white-desktop"></use>
+            </svg>
           </a>
           <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         </div>
@@ -133,10 +138,14 @@
   <footer class="footer">
     <a class="footer__logo" href="index.html">
       <!-- <img class="footer__logo-image" src="img/logo-dark-mobile.svg" width="147" height="40" alt="Приложение «Pink»"> -->
-      <picture>
+      <!-- <picture>
         <source media="(min-width: 1200px)" srcset="img/logotype-blue-desktop.svg">
         <img class="footer__logo-image" src="img/logo-dark-mobile.svg" width="147" height="40" alt="Приложение «Pink»">
-      </picture>
+      </picture> -->
+      <svg class="footer__logo-image" width="147" height="40">
+        <use class="footer__logo-mobile" href="img/sprite.svg#logo-dark-mobile"></use>
+        <use class="footer__logo-desktop" href="img/sprite.svg#logotype-blue-desktop"></use>
+      </svg>
     </a>
     <nav class="social__list">
       <a class="social__item social__item--vk" href="#">VK</a>
