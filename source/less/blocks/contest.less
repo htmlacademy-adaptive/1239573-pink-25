@@ -1,9 +1,19 @@
+.contest-promo {
+  margin-top: -71px;
+}
+
 .contest-promo__header {
   background-color: @dark-blue;
   background-image: url("../img/back-mobile.jpg");
   background-size: cover;
-  padding: 36px 20px 51px 20px;
+  background-repeat: no-repeat;
+  padding: 107px 20px 51px 20px;
   margin-bottom: 55px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/back-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
 }
 
 .contest-promo__title {
@@ -153,7 +163,7 @@
   padding-bottom: 20px;
 }
 
-.contest-form__radio+label::before {
+.contest-form__radio + label::before {
   content: "";
   position: absolute;
   width: 37px;
@@ -165,7 +175,7 @@
   top: 13px;
 }
 
-.contest-form__radio:checked+label::after {
+.contest-form__radio:checked + label::after {
   content: "";
   position: absolute;
   width: 15px;
@@ -181,7 +191,7 @@
   padding-left: 75px;
 }
 
-.contest-form__checkbox+label::before {
+.contest-form__checkbox + label::before {
   content: "";
   position: absolute;
   width: 35px;
@@ -193,7 +203,7 @@
   top: 14px;
 }
 
-.contest-form__checkbox:checked+label::after {
+.contest-form__checkbox:checked + label::after {
   content: "";
   position: absolute;
   background: url("../img/tick.svg");
@@ -204,6 +214,23 @@
 }
 
 @media (min-width: @tablet-width) {
+  .contest-promo {
+    margin-top: -88px;
+  }
+
+  .contest-promo__header {
+    padding-top: 124px;
+    background-size: 660px auto;
+    background-size: cover;
+    background-image: url("../img/back-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-tablet@2x.jpg");
+      background-size: 660px auto;
+      background-size: cover;
+    }
+  }
+
   .contest-promo__title {
     font-size: 50px;
     line-height: 68px;
@@ -232,7 +259,6 @@
   .contest-form__name-item-contact {
     flex-direction: column-reverse;
     margin: 40px 60px;
-
   }
 
   .contest-form__label {
@@ -245,15 +271,12 @@
 
   .contest-form__group {
     width: 640px;
+    margin-bottom: 65px;
+    background-color: @basic-white;
   }
 
   .contest-form__name {
     order: -1;
-  }
-
-  .contest-form__group {
-    margin-bottom: 65px;
-    background-color: @basic-white;
   }
 
   .contest-form__devices {
@@ -270,7 +293,6 @@
     order: 1;
     border: 2px solid @light-grey;
     position: relative;
-
   }
 
   .contest-form__achievement {
@@ -312,7 +334,7 @@
   .contest-form__label-contact-phone::before {
     content: "";
     position: absolute;
-    background-image: url(../img/phone-icon.svg);
+    background-image: url("../img/phone-icon.svg");
     background-repeat: no-repeat;
     width: 20px;
     height: 19px;
@@ -323,7 +345,7 @@
   .contest-form__label-contact-mail::before {
     content: "";
     position: absolute;
-    background-image: url(../img/mail-icon.svg);
+    background-image: url("../img/mail-icon.svg");
     background-repeat: no-repeat;
     width: 18px;
     height: 13px;
@@ -333,10 +355,22 @@
 }
 
 @media (min-width: @desktop-width) {
-
   .contest-promo {
     margin-bottom: 40px;
   }
+
+  .contest-promo__header {
+    background-size: 1200px auto;
+    background-size: cover;
+    background-image: url("../img/back-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-desktop@2x.jpg");
+      background-size: 1200px auto;
+      background-size: cover;
+    }
+  }
+
   .contest-promo__title {
     width: 940px;
   }
