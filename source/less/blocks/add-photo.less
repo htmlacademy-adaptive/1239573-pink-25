@@ -1,6 +1,6 @@
 .add-photo__caption-wrapper {
-  padding-top: 29px;
-  padding-bottom: 52px;
+  padding-top: 24px;
+  padding-bottom: 41px;
 }
 
 .add-photo__caption {
@@ -43,7 +43,7 @@
 
 .form-photo__button-wrapper {
   width: 280px;
-  margin-top: 40px;
+  margin-top: 54px;
 }
 
 .form-photo__button {
@@ -69,7 +69,11 @@
   display: flex;
   justify-content: space-around;
   width: 240px;
-  padding: 40px 20px 60px;
+  padding: 34px 20px 60px;
+}
+
+.photo__icons {
+  padding-right: 12px;
 }
 
 .photo__icons-crop {
@@ -101,7 +105,7 @@
   height: 2px;
   background: @dark-blue;
   // margin-bottom: 70px;
-  top: 108px;
+  top: 117px;
   left: 20px;
 }
 
@@ -113,8 +117,8 @@
   background-color: @basic-white;
   border: 2px solid @special-pink;
   border-radius: 50%;
-  right: 25%;
-  top: 102px;
+  right: 53px;
+  top: 112px;
 }
 
 .photo__icons--underline::after {
@@ -124,7 +128,7 @@
   height: 1px;
   background: @dark-blue;
   opacity: 0.1;
-  top: 148px;
+  top: 153px;
   left: -20px;
 }
 
@@ -139,25 +143,40 @@
     flex-direction: row;
     justify-content: space-between;
     width: 620px;
+    padding-top: 57px;
+    padding-bottom: 42px;
+    margin-bottom: 38px;
   }
 
   .form-photo__wrapper {
-    width: 260px;
+    width: 280px;
   }
 
   .form-photo__image {
     width: 300px;
   }
 
+  .add-photo__caption-wrapper {
+    padding-top: 14px;
+    padding-bottom: 70px;
+  }
+
+  .add-photo__caption {
+    font-size: 18px;
+  }
+
   .form-photo__icons {
     flex-direction: column;
-    width: 260px;
-    padding: 20px;
+    width: 280px;
+    padding: 0;
   }
 
   .photo__icons {
-    margin-bottom: 20px;
+    margin: 0px;
+    padding: 0;
     position: relative;
+    margin-left: 9px;
+    // margin-top: -22px;
   }
 
   .photo__icons-crop {
@@ -165,6 +184,8 @@
     height: 44px;
     background-image: url("../img/crop-tab.svg");
     background-repeat: no-repeat;
+    margin-bottom: 26px;
+    margin-top: 9px;
   }
 
   .photo__icons-fill {
@@ -172,6 +193,7 @@
     height: 43px;
     background-image: url("../img/fill-tab.svg");
     background-repeat: no-repeat;
+    margin-bottom: 26px;
   }
 
   .photo__icons-contrast {
@@ -185,12 +207,12 @@
   .photo__icons-crop::before {
     width: 202px;
     top: 10px;
-    left: 40px;
+    left: 51px;
   }
 
   .photo__icons-crop::after {
-    left: 180px;
-    top: 4px;
+    left: 211px;
+    top: 5px;
   }
 
   .photo__icons-fill::before {
@@ -199,8 +221,8 @@
     width: 202px;
     height: 2px;
     background: @dark-blue;
-    top: 10px;
-    left: 40px;
+    top: 13px;
+    left: 51px;
   }
 
   .photo__icons-fill::after {
@@ -221,8 +243,8 @@
     width: 202px;
     height: 2px;
     background: @dark-blue;
-    top: 10px;
-    left: 40px;
+    top: 9px;
+    left: 51px;
   }
 
   .photo__icons-contrast::after {
@@ -233,7 +255,7 @@
     background-color: @basic-white;
     border: 2px solid @special-pink;
     border-radius: 50%;
-    left: 130px;
+    left: 147px;
     top: 4px;
   }
 
@@ -244,7 +266,7 @@
     height: 1px;
     background: @dark-blue;
     opacity: 0.1;
-    top: 40px;
+    top: 48px;
     left: 0;
   }
 
@@ -253,8 +275,13 @@
     display: block;
   }
 
+  .form-photo__button {
+    margin-top: 26px;
+  }
+
   .form-photo__button-wrapper {
     width: 260px;
+    // margin-top: 103px;
   }
 
   .form-photo__button {
@@ -266,6 +293,9 @@
   .form-photo {
     width: 940px;
     justify-content: start;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 67px;
   }
 
   .add-photo--wrapper {
@@ -278,16 +308,22 @@
     justify-content: space-between;
     width: 410px;
     margin-top: 100px;
+    margin-left: 10px;
   }
 
   .form-photo__image {
-    padding: 60px 80px;
+    padding: 54px 80px;
   }
 
   .form-photo__wrapper {
     width: 410px;
     align-items: flex-start;
   }
+
+  .add-photo__caption-wrapper {
+    padding-top: 32px;
+    padding-bottom: 70px;
+}
 
   .form-photo__button {
     width: 183px;
@@ -349,5 +385,13 @@
 
   .underline-contrast {
     display: none;
+  }
+
+  .htmlacdademy-link {
+    font-size: 18px;
+  }
+
+  .social__list {
+    margin-right: -5px;
   }
 }
