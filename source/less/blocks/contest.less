@@ -124,6 +124,15 @@
   border-radius: 2px;
   outline: 0;
   margin: auto;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #1C9B5E;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .contest-form__caption {
@@ -229,6 +238,10 @@
   border-radius: 2px;
   left: 6px;
   top: 14px;
+
+  &:hover {
+    border: 2px solid @dark-blue;
+  }
 }
 
 .contest-form__checkbox:checked+label::after {
@@ -292,7 +305,6 @@
   }
 
   .contest-form__label {
-    // margin-right: 20px;
     padding-left: 8px;
     padding-right: 19px;
     padding-top: 24px;
@@ -407,7 +419,6 @@
     padding-top: 0;
     text-align: center;
     padding-left: 43px;
-    // padding-bottom: 45px;
   }
 
   .contest-form__label-achievement {
