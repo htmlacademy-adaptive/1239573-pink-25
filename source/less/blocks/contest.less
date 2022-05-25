@@ -7,8 +7,8 @@
   background-image: url("../img/back-mobile.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 107px 20px 51px 20px;
-  margin-bottom: 55px;
+  padding: 66px 20px 15px 20px;
+  margin-bottom: 44px;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/back-mobile@2x.jpg");
@@ -44,7 +44,8 @@
 .contest-form {
   display: flex;
   flex-direction: column;
-  margin-top: 55px;
+  margin-top: 12px;
+  margin-bottom: 4px;
 }
 
 .contest-form__group {
@@ -93,7 +94,7 @@
   font-size: 18px;
   color: @basic-black;
   font-family: inherit;
-  width: 82%;
+  width: 240px;
   height: 180px;
   padding-left: 20px;
   padding-right: 20px;
@@ -123,6 +124,15 @@
   border-radius: 2px;
   outline: 0;
   margin: auto;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #1C9B5E;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .contest-form__caption {
@@ -136,14 +146,21 @@
   padding-bottom: 40px;
 }
 
-.contest-form__caption span {
+.contest-form__caption--star {
   color: @special-pink;
+}
+
+.contest-form__caption--akcent {
+  display: none;
 }
 
 .contest-form__label-devices,
 .contest-form__label-achievement {
   text-align: center;
   width: 220px;
+  margin-left: -25px;
+  padding-top: 74px;
+  padding-bottom: 0;
 }
 
 .contest-form__radio,
@@ -154,16 +171,26 @@
 .contest-form__devices,
 .contest-form__achievement {
   background-color: @basic-grey;
+  width: 100%;
+  margin-top: -6px;
+  margin-bottom: 9px;
 }
 
-.contest-form__devices-item,
 .contest-form__achievement-item {
   position: relative;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 16px;
+  line-height: 30px;
 }
 
-.contest-form__radio + label::before {
+.contest-form__devices-item {
+  position: relative;
+  padding-top: 32px;
+  padding-bottom: 16px;
+  line-height: 30px;
+}
+
+.contest-form__radio+label::before {
   content: "";
   position: absolute;
   width: 37px;
@@ -171,27 +198,37 @@
   background-color: @basic-white;
   border: 2px solid @light-grey;
   border-radius: 50%;
-  left: 6px;
-  top: 13px;
+  left: 7px;
+  top: 30px;
 }
 
-.contest-form__radio:checked + label::after {
+.contest-form__radio:checked+label::after {
   content: "";
   position: absolute;
   width: 15px;
   height: 15px;
   background-color: @special-pink;
   border-radius: 50%;
-  left: 19px;
-  top: 27px;
+  left: 21px;
+  top: 43px;
 }
 
-.contest-form__devices-label,
+.contest-form__devices-label {
+  padding-left: 78px;
+  font-size: 18px;
+}
+
+.contest-form__label-comment {
+  padding-top: 43px;
+  padding-left: 2px;
+}
+
 .contest-form__achievement-label {
-  padding-left: 75px;
+  padding-left: 85px;
+  font-size: 18px;
 }
 
-.contest-form__checkbox + label::before {
+.contest-form__checkbox+label::before {
   content: "";
   position: absolute;
   width: 35px;
@@ -201,9 +238,13 @@
   border-radius: 2px;
   left: 6px;
   top: 14px;
+
+  &:hover {
+    border: 2px solid @dark-blue;
+  }
 }
 
-.contest-form__checkbox:checked + label::after {
+.contest-form__checkbox:checked+label::after {
   content: "";
   position: absolute;
   background: url("../img/tick.svg");
@@ -215,11 +256,13 @@
 
 @media (min-width: @tablet-width) {
   .contest-promo {
-    margin-top: -88px;
+    margin-top: -110px;
   }
 
   .contest-promo__header {
-    padding-top: 124px;
+    padding-top: 147px;
+    padding-bottom: 29px;
+    margin-bottom: 91px;
     background-size: 660px auto;
     background-size: cover;
     background-image: url("../img/back-tablet.jpg");
@@ -247,26 +290,29 @@
   }
 
   .contest-form {
-    margin-top: 82px;
+    margin-top: 65px;
   }
 
   .contest-form__name-item {
     flex-direction: row;
-    margin-bottom: 55px;
+    margin-bottom: 51px;
     position: relative;
   }
 
   .contest-form__name-item-contact {
     flex-direction: column-reverse;
-    margin: 40px 60px;
+    margin: 17px 65px;
   }
 
   .contest-form__label {
-    margin-right: 20px;
+    padding-left: 8px;
+    padding-right: 19px;
+    padding-top: 24px;
   }
 
   .contest-form__input {
     flex-grow: 1;
+    margin-right: 10px;
   }
 
   .contest-form__group {
@@ -277,14 +323,31 @@
 
   .contest-form__name {
     order: -1;
+    margin-bottom: 0;
+  }
+
+  .contest-form__checkbox+label::before {
+    left: 26px;
+    top: 17px;
+  }
+
+  .contest-form__checkbox:checked+label::after {
+    left: 35px;
+    top: 28px;
   }
 
   .contest-form__devices {
     order: 0;
     border: 2px solid @light-grey;
+    padding-bottom: 41px;
   }
 
-  .contest-form__devices-item,
+  .contest-form__devices-item {
+    margin-left: 40px;
+    padding-top: 45px;
+    padding-bottom: 0;
+  }
+
   .contest-form__achievement-item {
     margin-left: 40px;
   }
@@ -293,11 +356,28 @@
     order: 1;
     border: 2px solid @light-grey;
     position: relative;
+    margin-bottom: 45px;
   }
 
   .contest-form__achievement {
     order: 2;
     border: 2px solid @light-grey;
+    margin-bottom: 62px;
+  }
+
+  .contest-form__devices-label {
+    padding-left: 86px;
+  }
+
+  .contest-form__radio:checked+label::after {
+    left: 39px;
+    top: 52px;
+  }
+
+
+  .contest-form__radio+label::before {
+    left: 27px;
+    top: 39px;
   }
 
   .contest-form__button-wrapper {
@@ -311,24 +391,61 @@
 
   .contest-form__button {
     margin: 0;
+    margin-left: 10px;
+    width: 300px;
   }
 
   .contest-form__comment {
     order: 3;
     border: 2px solid @light-grey;
+    margin-bottom: 62px;
+    margin-left: 20px;
   }
 
-  .contest-form__label-devices,
-  .contest-form__label-achievement,
-  .contest-form__label-comment,
+  .contest-form__label-contact-phone {
+    padding-top: 15px;
+    padding-bottom: 17px;
+    margin-left: 12px;
+  }
+
+  .contest-form__label-contact-mail {
+    padding-top: 15px;
+    padding-bottom: 17px;
+    margin-left: 12px;
+  }
+
+  .contest-form__label-devices {
+    width: 400px;
+    padding-top: 0;
+    text-align: center;
+    padding-left: 43px;
+  }
+
+  .contest-form__label-achievement {
+    width: 400px;
+    padding-top: 8px;
+    text-align: center;
+    padding-left: 60px;
+    margin-bottom: 4px;
+  }
+
+  .contest-form__label-comment {
+    width: 400px;
+    padding-top: 8px;
+    text-align: center;
+    padding-bottom: 27px;
+  }
+
   .contest-form__label-contact {
     width: 400px;
     padding-top: 8px;
     text-align: center;
+    display: block;
   }
 
-  .contest-form__label-contact {
-    display: block;
+  .contest-form__caption {
+    padding-top: 0;
+    padding-bottom: 80px;
   }
 
   .contest-form__label-contact-phone::before {
@@ -352,6 +469,10 @@
     right: 25px;
     top: 25px;
   }
+
+  .contest-form__comment-text {
+    width: 456px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -360,6 +481,8 @@
   }
 
   .contest-promo__header {
+    padding-top: 139px;
+    padding-bottom: 58px;
     background-size: 1200px auto;
     background-size: cover;
     background-image: url("../img/back-desktop.jpg");
@@ -376,7 +499,13 @@
   }
 
   .contest-promo__slogan {
-    width: 760px;
+    display: inline;
+  }
+
+  .slogan-wrapper {
+    width: 758px;
+    margin: auto;
+    text-align: center;
   }
 
   .contest-form {
@@ -396,7 +525,6 @@
     width: 450px;
   }
 
-  .contest-form__contact,
   .contest-form__achievement,
   .contest-form__comment,
   .contest-form__button-wrapper {
@@ -407,58 +535,122 @@
   }
 
   .contest-form__label {
-    padding-left: 10px;
+    padding-left: 0px;
   }
 
   .contest-form__name-item {
-    margin-bottom: 58px;
+    margin-bottom: 51px;
   }
 
   .contest-form__devices-item {
-    margin-left: 80px;
-    margin-top: 30px;
+    margin-left: 46px;
+    margin-top: 1px;
   }
 
   .contest-form__name {
-    padding-top: 40px;
+    padding-top: 45px;
   }
 
   .contest-form__devices {
     padding-left: 0;
+    width: 430px;
+    margin-left: 33px;
+    margin-top: 34px;
+  }
+
+  .contest-form__label-devices {
+    padding-left: 40px;
+  }
+
+  .contest-form__name-item-secondname {
+    margin-bottom: 0;
   }
 
   .contest-form__contact {
-    margin-top: 64px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    grid-column: 1 / 3;
+    width: 940px;
   }
 
-
   .contest-form__achievement-item {
-    margin-left: 40px;
-    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-top: 0;
+    padding: 0;
+    width: 280px;
   }
 
   .contest-form__name-item-contact {
-    margin: 40px 54px;
-    width: 363px;
+    margin: 0;
+    margin-top: 21px;
+    margin-left: 57px;
+    width: 387px;
+  }
+
+  .contest-form__achievement-label {
+    padding-left: 77px;
+  }
+
+  .contest-form__checkbox+label::before {
+    left: 19px;
+    top: -3px;
+  }
+
+  .contest-form__button {
+    margin: 0;
+}
+  .contest-form__checkbox:checked+label::after {
+    left: 27px;
+    top: 7px;
   }
 
   .contest-form__achievement {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 54px;
+    grid-row-gap: 31px;
+    padding-bottom: 39px;
   }
 
-  .contest-form__achievement,
-  .contest-form__comment,
+  .contest-form__comment {
+    margin-top: 50px;
+}
+
+  .contest-form__label-achievement {
+    padding-left: 65px;
+    margin-bottom: 45px;
+  }
+
   .contest-form__button-wrapper {
-    margin-top: 40px;
+    margin-top: 76px;
+  }
+
+  .contest-form__comment-text {
+    width: 780px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    height: auto;
+}
+
+  .contest-form__label-contact-phone,
+  .contest-form__label-contact-mail {
+    margin-left: 20px;
   }
 
   .contest-form__achievement-item-chack-norris {
     order: 0;
+    margin-left: 35px;
+  }
+
+  .contest-form__label-contact-phone::before,
+  .contest-form__label-contact-mail::before {
+    right: 30px;
   }
 
   .contest-form__achievement-item-tower {
     order: 1;
+    margin-left: 14px;
   }
 
   .contest-form__achievement-item-beach {
@@ -467,9 +659,19 @@
 
   .contest-form__achievement-item-souvenir {
     order: 3;
+    margin-left: 35px;
   }
 
   .contest-form__achievement-item-hotel {
     order: 4;
+    margin-left: 14px;
   }
+
+  .contest-form__caption--akcent {
+    display: inline;
+  }
+
+  .contest-form__caption {
+    padding-bottom: 43px;
+}
 }
