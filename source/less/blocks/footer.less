@@ -66,11 +66,31 @@
     justify-content: space-between;
     margin: 0 auto;
     flex-direction: row;
+    padding-bottom: 0;
+  }
+
+  .social__list {
+    margin-right: 20px;
+  }
+
+  .social__item {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .htmlacdademy-link::after {
+    bottom: 7px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .footer {
     width: 940px;
+    padding-top: 30px;
+    padding-bottom: 80px;
+  }
+
+  .htmlacdademy-link::after {
+    bottom: 85px;
   }
 }

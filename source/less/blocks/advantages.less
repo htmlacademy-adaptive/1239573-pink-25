@@ -84,8 +84,9 @@
 
 @media (min-width: @tablet-width) {
   .advantages__wrapper {
-  padding-top: 50px;
+    padding-top: 50px;
   }
+
   .advantages__title {
     width: 590px;
     font-size: 40px;
@@ -144,12 +145,17 @@
 }
 
 @media (min-width: @desktop-width) {
+  .advantages__wrapper {
+    padding-top: 62px;
+  }
+
   .advantages__list {
-    padding-top: 430px;
+    padding-top: 289px;
     width: 900px;
     display: flex;
     flex-direction: row;
     padding-bottom: 0;
+    justify-content: space-between;
   }
 
   .advantages__title {
@@ -160,6 +166,8 @@
 
   .advantages__title--bottom {
     width: 450px;
+    margin-top: 0;
+    margin-bottom: 51px;
   }
 
   .advantages__list--wrapper::before {
@@ -172,6 +180,13 @@
     width: 252px;
   }
 
+  .advantages__item p {
+    width: 240px;
+    font-size: 18px;
+    margin: 24px auto;
+    line-height: 30px;
+  }
+
   .advantages__item::before {
     content: "";
     position: absolute;
@@ -179,8 +194,8 @@
     background-repeat: no-repeat;
     width: 308px;
     height: 314px;
-    left: -20px;
-    top: -430px;
+    left: -25px;
+    top: -357px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/iphone-3-desktop@2x.png");
@@ -188,14 +203,27 @@
     }
   }
 
+  // .advantages__item--friends::before {
+  //   left: -26px;
+  //   top: -381px;
+  // }
+
   .advantages__item::after {
     content: "";
     position: absolute;
     background-repeat: no-repeat;
     width: 169px;
     height: 263px;
-    left: 47px;
-    top: -392px;
+    left: 42px;
+    top: -317px;
+  }
+
+  .advantages__item--fun h3 {
+    padding-left: 8px;
+  }
+
+  .advantages__item--friends h3 {
+    padding-right: 8px;
   }
 
   .advantages__item--fun::after {
@@ -218,6 +246,8 @@
 
   .advantages__item--friends::after {
     background-image: url("../img/iphone-screen-3-desktop.jpg");
+    // left: 40px;
+    // top: -341px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/iphone-screen-3-desktop@2x.jpg");
@@ -225,9 +255,9 @@
     }
   }
 
-  .advantages__item p {
-    font-size: 18px;
-  }
+  // .advantages__item p {
+  //
+  // }
 
   .advantages__item h3 {
     font-size: 30px;

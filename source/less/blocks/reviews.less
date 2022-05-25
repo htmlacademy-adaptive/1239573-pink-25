@@ -73,9 +73,6 @@
   .reviews__wrapper {
     width: 620px;
     margin: auto;
-  }
-
-  .reviews__wrapper {
     padding-top: 36px;
   }
 
@@ -100,13 +97,42 @@
   }
 
   .reviews__toggles {
-  margin-top: 20px;
-  margin-bottom: 16px;
+    margin-top: 20px;
+    margin-bottom: 16px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .reviews__wrapper {
     width: 700px;
+    margin-top: 130px;
+    position: relative;
+  }
+
+  .reviews__wrapper::before {
+    content: "";
+    width: 79px;
+    height: 63px;
+    background: url("../img/quotes.svg") no-repeat scroll;
+    position: absolute;
+    top: -58px;
+    left: 311px;
+  }
+
+  .reviews__item {
+    width: 100%;
+  }
+
+  .reviews__author-name {
+    font-size: 24px;
+  }
+
+  .reviews__author-info {
+    font-size: 18px;
+    margin-top: 5px;
+  }
+
+  .reviews__toggles {
+    display: none;
   }
 }
