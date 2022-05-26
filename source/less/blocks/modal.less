@@ -1,0 +1,92 @@
+.modal {
+  position: fixed;
+  width: 100%;
+  top: 25%;
+  padding-top: 44px;
+  text-align: center;
+  background-color: @basic-white;
+  box-shadow: 0 25px 15px -25px rgb(0 0 0 / 20%);
+}
+
+.modal__wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.modal__title {
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 25px;
+}
+
+.modal__message {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 0;
+}
+
+.modal__message--good {
+  padding-bottom: 33px;
+}
+
+.modal__wrapper-button {
+  padding-top: 42px;
+  padding-bottom: 52px;
+}
+
+.modal__wrapper-button--good {
+  padding-top: 52px;
+  background-color: @basic-grey;
+}
+
+.modal__button {
+  min-width: 280px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: @basic-white;
+  background-color: @special-green;
+  padding: 15px 25px 17px 25px;
+  border: none;
+  border-radius: 3px;
+  overflow: hidden;
+  outline: none;
+
+  &:hover {
+    background-color: @accent-green;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.modal--close {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .modal {
+    width: 460px;
+    left: 50%;
+    margin-left: -230px;
+    padding-top: 41px;
+  }
+
+  .modal__wrapper {
+    width: 350px;
+  }
+
+  .modal__title {
+    font-size: 30px;
+    line-height: 40px;
+    margin: 0 auto 22px;
+    width: 300px;
+  }
+
+  .modal__message {
+    font-size: 18px;
+    width: 400px;
+  }
+}
