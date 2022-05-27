@@ -60,10 +60,11 @@
   &:hover {
     color: @special-pink;
   }
-}
 
-.nav-item--current {
-  text-decoration: underline;
+  &:active {
+    color: @basic-white;
+    opacity: 0.3;
+  }
 }
 
 .nav-list--closed {
@@ -153,5 +154,19 @@
     border: none;
     text-transform: initial;
     background-color: transparent;
+  }
+
+  .nav-item--current {
+    text-decoration: underline;
+    text-underline-offset: 12px;
+
+    &:hover {
+      text-decoration-color: @special-pink;
+    }
+
+    &:active {
+      text-decoration-color: @basic-white;
+      opacity: 0.3;
+    }
   }
 }
