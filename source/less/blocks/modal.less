@@ -25,7 +25,7 @@
   margin-bottom: 0;
 }
 
-.modal__message--good {
+.modal__message--success {
   padding-bottom: 33px;
 }
 
@@ -34,7 +34,7 @@
   padding-bottom: 52px;
 }
 
-.modal__wrapper-button--good {
+.modal__wrapper-button--success {
   padding-top: 52px;
   background-color: @basic-grey;
 }
@@ -72,6 +72,7 @@
     left: 50%;
     margin-left: -230px;
     padding-top: 41px;
+    border-radius: 5px;
   }
 
   .modal__wrapper {
@@ -87,6 +88,60 @@
 
   .modal__message {
     font-size: 18px;
+    width: 349px;
+  }
+
+  .modal__wrapper-button {
+    padding-top: 34px;
+  }
+
+  .modal__button {
+    min-width: 300px;
+  }
+
+  .modal__message--success {
+    padding-left: 9px;
+    width: 330px;
+  }
+
+  .modal__wrapper-button--success {
+    padding-top: 48px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .modal {
+    width: 780px;
+    margin-left: -390px;
+  }
+  .modal__title {
+    width: 330px;
+  }
+
+  .modal__message {
+    width: 350px;
+    margin-bottom: 63px;
+  }
+
+  .modal__wrapper-button {
+    background-color: @basic-grey;
+    padding-top: 50px;
+  }
+
+  .modal__title--success {
     width: 400px;
+  }
+
+  .modal__wrapper--success {
+    width: 450px;
+  }
+
+  .modal__message--success {
+    width: 432px;
+    margin-bottom: 5px;
+  }
+
+  .modal__button--success {
+    width: 456px;
   }
 }
