@@ -260,13 +260,12 @@
     left: 147px;
     top: 4px;
     cursor: pointer;
-
-    // &:active {
-    //   background-color: @special-pink;
-    // }
   }
 
-  .photo-icons--contrast:hover::after {
+  .photo-icons--contrast:hover::after,
+  .photo-icons--fill:hover::after,
+  .photo-icons--crop:hover::after {
+    content: "";
     background-color: @special-pink;
   }
 

@@ -170,14 +170,18 @@
   border-radius: 50%;
   left: 7px;
   top: 30px;
+}
 
-  &:hover {
-    border-color: @dark-blue;
-  }
+.contest-form__devices-label:hover::before,
+.contest-form__checkbox + label:hover::before {
+  content: "";
+  border-color: @dark-blue;
+}
 
-  &:active {
-    border-color: @dark-blue;
-  }
+.contest-form__devices-label:active::before,
+.contest-form__checkbox + label:active::before {
+  content: "";
+  border-color: @special-pink;
 }
 
 .contest-form__radio:checked + label::after {
