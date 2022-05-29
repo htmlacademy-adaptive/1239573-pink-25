@@ -74,7 +74,7 @@
   }
 
   .gallery__container {
-    background: #f2f2f2;
+    background: @basic-grey;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -117,6 +117,10 @@
     grid-template-columns: 300px 300px 300px;
     width: 940px;
     grid-row-gap: 53px;
+    margin-bottom: 25px;
   }
 
+  .gallery__item {
+    min-height: 555px;
+  }
 }

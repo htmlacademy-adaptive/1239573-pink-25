@@ -6,6 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Пинк | Фотогалерея</title>
   <link rel="stylesheet" href="css/style.min.css" type="text/css" />
+  <link rel="preload" href="/fonts/opensans.woff2" as="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/fonts/opensans.woff" as="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="/fonts/opensansbold.woff2" as="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/fonts/opensansbold.woff" as="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="/fonts/opensanslight.woff2" as="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/fonts/opensanslight.woff" as="font/woff" crossorigin="anonymous">
+
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png">
@@ -19,19 +26,19 @@
       <div class="header-container">
         <div class="logo-wrapper">
           <a class="header__logo" href="index.html">
-            <svg class="header__logo-image" width="74" height="23">
+            <svg class="header__logo-image" width="74" height="23" aria-label="Приложение «Pink»">
               <use class="logo-mobile" href="img/sprite.svg#logo-white-mobile"></use>
               <use class="logo-tablet" href="img/sprite.svg#logotype-white-tablet"></use>
               <use class="logo-desktop" href="img/sprite.svg#logotype-white-desktop"></use>
             </svg>
           </a>
-          <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <button class="nav-toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         </div>
-        <nav class="nav__list nav__list--closed">
-          <a class="nav__item" href="index.html">Главная</a>
-          <a class="nav__item nav__item--current" href="photo.html">Фотографии</a>
-          <a class="nav__item" href="form.html">Конкурс</a>
-          <a class="nav__item" href="https://htmlacademy.ru">HTML Academy</a>
+        <nav class="nav-list nav-list--closed nav-list--nojs">
+          <a class="nav-item" href="index.html">Главная</a>
+          <a class="nav-item nav-item--current" href="photo.html">Фотографии</a>
+          <a class="nav-item" href="form.html">Конкурс</a>
+          <a class="nav-item" href="https://htmlacademy.ru">HTML Academy</a>
         </nav>
       </div>
     </div>
@@ -46,107 +53,149 @@
         ваших?
       </p>
       <div class="picture-container">
-        <picture>
-          <source media="(min-width: 1200px)" srcset="img/panorama-desktop.jpg 1x, img/panorama-desktop@2x.jpg 2x">
-          <source media="(min-width: 660px)" srcset="img/panorama-tablet.jpg 1x, img/panorama-tablet@2x.jpg 2x">
-          <img class="photo__image" src="img/panorama-mobile.jpg" width="320" height="137"
-            alt="Подвесной мост в Красной Поляне">
-        </picture>
+        <a href="img/panorama-desktop.jpg">
+          <picture>
+            <source type="image/webp" media="(min-width: 1200px)"
+              srcset="img/panorama-desktop.webp 1x, img/panorama-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 660px)"
+              srcset="img/panorama-tablet.webp 1x, img/panorama-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/panorama-mobile.webp 1x, img/panorama-mobile@2x.webp 2x">
+            <source media="(min-width: 1200px)" srcset="img/panorama-desktop.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/panorama-tablet.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+            <img class="photo-image" src="img/panorama-mobile.jpg" width="320" height="137"
+              alt="Подвесной мост в Красной Поляне">
+          </picture>
+        </a>
       </div>
-        <div class="photo__container">
-          <p class="photo__autor">Анна <span>(5 минут назад)</span></p>
-          <p class="photo__comment">Прыгать или нет? Напишите в комментарии свой совет и смотрите&nbsp;прямую трансляцию
-            в
-            перископе, задавайте свои вопросы!</p>
-          <p class="photo__likes">Нравится: 215</p>
-        </div>
+      <div class="photo-container">
+        <p class="photo-autor">Анна <span>(5 минут назад)</span></p>
+        <p class="photo-comment">Прыгать или нет? Напишите в комментарии свой совет и смотрите&nbsp;прямую трансляцию
+          в
+          перископе, задавайте свои вопросы!</p>
+        <p class="photo-likes">Нравится: 215</p>
+      </div>
     </section>
     <!-- Галерея -->
     <section class="gallery">
       <h2 class="visually-hidden">Галлерея работ</h2>
       <article class="gallery__item">
+        <h2 class="visually-hidden">Первая работа</h2>
         <div class="gallery__container">
-          <picture>
-
-            <source type="image/webp" media="(min-width: 1200px)"
-              srcset="img/photo-1-desktop.webp 1x, img/photo-1-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 660px)"
-              srcset="img/photo-1-tablet.webp 1x, img/photo-1-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/photo-1-mobile.webp 1x, img/photo-1-mobile@2x.webp 2x">
-
-            <source media="(min-width: 1200px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
-            <source media="(min-width: 660px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
-            <img class="gallery__image" src="img/photo-1-mobile.jpg" width="280" height="180" alt="Фотосессия Шкоды">
-          </picture>
-
+          <a href="img/photo-1-desktop.jpg">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/photo-1-desktop.webp 1x, img/photo-1-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)"
+                srcset="img/photo-1-tablet.webp 1x, img/photo-1-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-1-mobile.webp 1x, img/photo-1-mobile@2x.webp 2x">
+              <source media="(min-width: 1200px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+              <img class="gallery__image" src="img/photo-1-mobile.jpg" width="280" height="180" alt="Фотосессия Шкоды">
+            </picture>
+          </a>
           <p class="gallery__autor">Левон <span>(5 часов назад)</span></p>
           <p class="gallery__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
           <p class="gallery__likes">Нравится: 356</p>
         </div>
       </article>
       <article class="gallery__item">
+        <h2 class="visually-hidden">Вторая работа</h2>
         <div class="gallery__container">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
-            <source media="(min-width: 660px)" srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
-            <img class="gallery__image" src="img/photo-2-mobile.jpg" width="280" height="180"
-              alt="Музыкальная установка">
-          </picture>
-
+          <a href="img/photo-2-desktop.jpg">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/photo-2-desktop.webp 1x, img/photo-2-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)"
+                srcset="img/photo-2-tablet.webp 1x, img/photo-2-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-2-mobile.webp 1x, img/photo-2-mobile@2x.webp 2x">
+              <source media="(min-width: 1200px)" srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+              <img class="gallery__image" src="img/photo-2-mobile.jpg" width="280" height="180"
+                alt="Музыкальная установка">
+            </picture>
+          </a>
           <p class="gallery__autor">Антон <span>(12 часов назад)</span></p>
           <p class="gallery__comment">Соседи будут рады!</p>
           <p class="gallery__likes">Нравится: 666</p>
         </div>
       </article>
       <article class="gallery__item">
+        <h2 class="visually-hidden">Третья работа</h2>
         <div class="gallery__container">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
-            <source media="(min-width: 660px)" srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
-            <img class="gallery__image" src="img/photo-3-mobile.jpg" width="280" height="180"
-              alt="Небо через панорамное окно">
-          </picture>
-
+          <a href="img/photo-3-desktop.jpg">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/photo-3-desktop.webp 1x, img/photo-3-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)"
+                srcset="img/photo-3-tablet.webp 1x, img/photo-3-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-3-mobile.webp 1x, img/photo-3-mobile@2x.webp 2x">
+              <source media="(min-width: 1200px)" srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+              <img class="gallery__image" src="img/photo-3-mobile.jpg" width="280" height="180"
+                alt="Небо через панорамное окно">
+            </picture>
+          </a>
           <p class="gallery__autor">Борис <span>(20 часов назад)</span></p>
           <p class="gallery__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
           <p class="gallery__likes">Нравится: 215</p>
         </div>
       </article>
       <article class="gallery__item">
+        <h2 class="visually-hidden">Четвертая работа</h2>
         <div class="gallery__container">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
-            <source media="(min-width: 660px)" srcset="img/photo-4-tablet.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
-            <img class="gallery__image" src="img/photo-4-mobile.jpg" width="280" height="180" alt="Кубанская бахча">
-          </picture>
-
+          <a href="img/photo-4-desktop.jpg">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/photo-4-desktop.webp 1x, img/photo-4-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)"
+                srcset="img/photo-4-tablet.webp 1x, img/photo-4-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-4-mobile.webp 1x, img/photo-4-mobile@2x.webp 2x">
+              <source media="(min-width: 1200px)" srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-4-tablet.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
+              <img class="gallery__image" src="img/photo-4-mobile.jpg" width="280" height="180" alt="Кубанская бахча">
+            </picture>
+          </a>
           <p class="gallery__autor">Сергей <span>(25 часов назад)</span></p>
           <p class="gallery__comment">Самая кубанская в мире!</p>
           <p class="gallery__likes">Нравится: 4</p>
         </div>
       </article>
       <article class="gallery__item">
+        <h2 class="visually-hidden">Пятая работа</h2>
         <div class="gallery__container">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/photo-5-desktop.jpg 1x, img/photo-5-desktop@2x.jpg 2x">
-            <source media="(min-width: 660px)" srcset="img/photo-5-tablet.jpg 1x, img/photo-5-tablet@2x.jpg 2x">
-            <img class="gallery__image" src="img/photo-5-mobile.jpg" width="280" height="180" alt="Ноги на фоне гор">
-          </picture>
-
+          <a href="img/photo-5-desktop.jpg">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/photo-5-desktop.webp 1x, img/photo-5-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)"
+                srcset="img/photo-5-tablet.webp 1x, img/photo-5-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-5-mobile.webp 1x, img/photo-5-mobile@2x.webp 2x">
+              <source media="(min-width: 1200px)" srcset="img/photo-5-desktop.jpg 1x, img/photo-5-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-5-tablet.jpg 1x, img/photo-5-tablet@2x.jpg 2x">
+              <img class="gallery__image" src="img/photo-5-mobile.jpg" width="280" height="180" alt="Ноги на фоне гор">
+            </picture>
+          </a>
           <p class="gallery__autor">Максим <span>(40 часов назад)</span></p>
           <p class="gallery__comment">Где снег-то?</p>
           <p class="gallery__likes">Нравится: 150</p>
         </div>
       </article>
       <article class="gallery__item">
+        <h2 class="visually-hidden">Шестая работа</h2>
         <div class="gallery__container">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/photo-6-desktop.jpg 1x, img/photo-6-desktop@2x.jpg 2x">
-            <source media="(min-width: 660px)" srcset="img/photo-6-tablet.jpg 1x, img/photo-6-tablet@2x.jpg 2x">
-            <img class="gallery__image" src="img/photo-6-mobile.jpg" width="280" height="180"
-              alt="Крыло самолета на закате">
-          </picture>
-
+          <a href="img/photo-6-desktop.jpg">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/photo-6-desktop.webp 1x, img/photo-6-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)"
+                srcset="img/photo-6-tablet.webp 1x, img/photo-6-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-6-mobile.webp 1x, img/photo-6-mobile@2x.webp 2x">
+              <source media="(min-width: 1200px)" srcset="img/photo-6-desktop.jpg 1x, img/photo-6-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-6-tablet.jpg 1x, img/photo-6-tablet@2x.jpg 2x">
+              <img class="gallery__image" src="img/photo-6-mobile.jpg" width="280" height="180"
+                alt="Крыло самолета на закате">
+            </picture>
+          </a>
           <p class="gallery__autor">Надежда <span>(45 часов назад)</span></p>
           <p class="gallery__comment">Всем GM и взаимные лайки!</p>
           <p class="gallery__likes">Нравится: 2560</p>
@@ -159,24 +208,30 @@
         <p class="add-photo__caption">Затмите их всех! </p>
         <p class="add-photo__caption">Выкладывайте всё, что накопилось в телефоне!</p>
       </div>
-      <div class="add-photo--wrapper">
+      <div class="add-photo__wrapper">
         <form class="form-photo" action="https://echo.htmlacademy.ru/">
-          <picture>
-            <source media="(min-width: 660px)" srcset="img/winter-road-tablet.jpg 1x, img/winter-road-tablet@2x.jpg 2x">
-            <img class="form-photo__image" src="img/winter-road-mobile.jpg" width="100%" height="auto"
-              alt="Зимняя дорога">
-          </picture>
+          <a href="img/winter-road-tablet.jpg">
+            <picture>
+              <source type="image/webp" media="(min-width: 660px)"
+                srcset="img/winter-road-tablet.webp 1x, img/winter-road-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/winter-road-mobile.webp 1x, img/winter-road-mobile@2x.webp 2x">
+              <source media="(min-width: 660px)"
+                srcset="img/winter-road-tablet.jpg 1x, img/winter-road-tablet@2x.jpg 2x">
+              <img class="form-photo__image" src="img/winter-road-mobile.jpg" width="280" height="374"
+                alt="Зимняя дорога">
+            </picture>
+          </a>
 
           <div class="form-photo__wrapper">
             <div class="form-photo__icons">
-              <div class="photo__icons photo__icons-crop">
-                <div class="photo__icons--underline underline-crop"> </div>
+              <div class="photo-icons photo-icons--crop">
+                <div class="icons-underline icons-underline--crop"> </div>
               </div>
-              <div class="photo__icons photo__icons-fill">
-                <div class="photo__icons--underline underline-fill"> </div>
+              <div class="photo-icons photo-icons--fill">
+                <div class="icons-underline icons-underline--fill"> </div>
               </div>
-              <div class="photo__icons photo__icons-contrast">
-                <div class="photo__icons--underline underline-contrast"> </div>
+              <div class="photo-icons photo-icons--contrast">
+                <div class="icons-underline icons-underline--contrast"> </div>
               </div>
             </div>
 
@@ -197,10 +252,22 @@
         <use class="footer__logo-desktop" href="img/sprite.svg#logotype-blue-desktop"></use>
       </svg>
     </a>
-    <nav class="social__list">
-      <a class="social__item social__item--vk" href="#">VK</a>
-      <a class="social__item social__item--telegram" href="#">Telegram</a>
-      <a class="social__item social__item--youtube" href="#">Youtube</a>
+    <nav class="social-list">
+      <a class="social-item social-item--vk" href="https://vk.com/">Ссылка на VK
+        <svg class="social-icon social-icon--youtube" width="18" height="18" aria-label="vk">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#vk"></use>
+        </svg>youtube
+      </a>
+      <a class="social-item social-item--telegram" href="https://web.telegram.org/z/">Ссылка на telegram
+        <svg class="social-icon social-icon--telegram" width="18" height="18" aria-label="telegram">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#telegram"></use>
+        </svg>youtube
+      </a>
+      <a class="social-item social-item--youtube" href="https://www.youtube.com/">Ссылка на youtube
+        <svg class="social-icon social-icon--youtube" width="18" height="18" aria-label="youtube">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#youtube"></use>
+        </svg>youtube
+      </a>
     </nav>
     <a class="htmlacdademy-link" href="https://htmlacademy.ru/">Разработано</a>
   </footer>

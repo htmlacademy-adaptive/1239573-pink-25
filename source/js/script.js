@@ -1,14 +1,14 @@
-let navList = document.querySelector('.nav__list');
-let navToggle = document.querySelector('.nav__toggle');
+let navList = document.querySelector('.nav-list');
+let navToggle = document.querySelector('.nav-toggle');
 
-// navMain.classList.remove('main-nav--nojs');
+navList.classList.remove('nav-list--nojs');
 
 navToggle.addEventListener('click', function () {
-  if (navList.classList.contains('nav__list--closed')) {
-    navList.classList.remove('nav__list--closed');
-    navList.classList.add('nav__list--opened');
+  if (navList.classList.contains('nav-list--closed')) {
+    navList.classList.remove('nav-list--closed');
+    navList.classList.add('nav-list--opened');
   } else {
-    navList.classList.add('nav__list--closed');
-    navList.classList.remove('nav__list--opened');
+    navList.classList.add('nav-list--closed');
+    navList.classList.remove('nav-list--opened');
   }
 });
