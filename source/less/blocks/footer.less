@@ -7,57 +7,80 @@
   padding-bottom: 40px;
 }
 
-.social-list {
+.footer__logo-image {
+  fill: @dark-blue;
+
+  &:hover {
+    fill: @special-pink;
+  }
+
+  &:active {
+    fill: @dark-blue;
+    opacity: 0.3;
+  }
+}
+
+.footer__social-list {
   display: flex;
   justify-content: space-around;
   width: 180px;
   position: relative;
 }
 
-.htmlacdademy-link {
+.footer__htmlacdademy-link {
   color: @dark-blue;
   text-decoration: none;
   margin-right: 42px;
   font-size: 14px;
 }
 
-.htmlacdademy-link::after {
+.footer__htmlacdademy-link::after {
   content: "";
-  background-image: url("../img/html-academy.svg");
+  mask-image: url("../img/html-academy.svg");
+  background-color: @special-pink;
   background-repeat: no-repeat;
   width: 27px;
   height: 34px;
   position: absolute;
   margin-left: 15px;
   bottom: 38px;
-
-  &:hover {
-    color: @dark-blue;
-  }
 }
 
-.social-item--vk {
+.footer__logo-desktop {
+  display: none;
+}
+
+.footer__htmlacdademy-link:hover::after {
+  background-color: @dark-blue;
+}
+
+.footer__htmlacdademy-link:active::after {
+  background-color: @dark-blue;
+  opacity: 0.3;
+}
+
+.footer__social-item--vk {
   background-image: url("../img/vk.svg");
   background-repeat: no-repeat;
   width: 18px;
   height: 18px;
 }
 
-.social-item--telegram {
+.footer__social-item--telegram {
   background-image: url("../img/telegram.svg");
   background-repeat: no-repeat;
   width: 18px;
   height: 18px;
 }
 
-.social-item--youtube {
+.footer__social-item--youtube {
   background-image: url("../img/youtube.svg");
   background-repeat: no-repeat;
   width: 18px;
   height: 18px;
 }
 
-.social-item {
+.footer__social-item {
   font-size: 0;
   margin-top: 29px;
   margin-bottom: 42px;
@@ -83,17 +106,17 @@
     padding-bottom: 0;
   }
 
-  .social-list {
+  .footer__social-list {
     margin-right: 20px;
     width: 190px;
   }
 
-  .social-item {
+  .footer__social-item {
     margin-top: 0;
     margin-bottom: 0;
   }
 
-  .htmlacdademy-link::after {
+  .footer__htmlacdademy-link::after {
     bottom: 7px;
   }
 }
@@ -105,15 +128,23 @@
     padding-bottom: 80px;
   }
 
-  .htmlacdademy-link::after {
+  .footer__logo-mobile {
+    display: none;
+  }
+
+  .footer__logo-desktop {
+    display: block;
+  }
+
+  .footer__htmlacdademy-link::after {
     bottom: 85px;
   }
 
-  .htmlacdademy-link {
+  .footer__htmlacdademy-link {
     font-size: 18px;
   }
 
-  .social-list {
+  .footer__social-list {
     margin-right: -9px;
   }
 }

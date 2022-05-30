@@ -44,22 +44,22 @@
   padding-bottom: 50px;
 }
 
-.photo-image {
+.photo-promo__photo-image {
   width: 100%;
 }
 
-.photo-container {
+.photo-promo__photo-container {
   background: @basic-grey;
   margin: 0 auto 17px;
   position: relative;
   width: 280px;
 }
 
-.picture-container {
+.photo-promo__picture-container {
   position: relative;
 }
 
-.picture-container::before {
+.photo-promo__picture-container::before {
   content: "Панорама дня";
   position: absolute;
   background-color: @special-pink;
@@ -72,7 +72,7 @@
   right: 20px;
 }
 
-.photo-autor {
+.photo-promo__photo-autor {
   font-weight: 700;
   font-size: 14px;
   color: @dark-blue;
@@ -81,14 +81,14 @@
   padding-left: 17px;
 }
 
-.photo-autor span {
+.photo-promo__photo-autor span {
   font-weight: 300;
   font-size: 12px;
   color: @dark-blue;
   text-transform: uppercase;
 }
 
-.photo-comment {
+.photo-promo__photo-comment {
   font-weight: 400;
   font-size: 14px;
   color: @dark-blue;
@@ -98,7 +98,7 @@
   line-height: 24px;
 }
 
-.photo-likes {
+.photo-promo__photo-likes {
   font-weight: 400;
   font-size: 12px;
   color: @special-pink;
@@ -108,7 +108,7 @@
   padding: 10px 0 18px 50px;
 }
 
-.photo-likes::before {
+.photo-promo__photo-likes::before {
   content: "";
   position: absolute;
   background-image: url("../img/heart.svg");
@@ -151,20 +151,20 @@
     padding-bottom: 77px;
   }
 
-  .photo-image {
+  .photo-promo__photo-image {
     width: 660px;
     height: 509px;
   }
 
-  .picture-container {
+  .photo-promo__picture-container {
     margin-bottom: -8px;
   }
 
-  .picture-container::before {
+  .photo-promo__picture-container::before {
     top: 58px;
   }
 
-  .photo-container {
+  .photo-promo__photo-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 620px;
@@ -173,25 +173,25 @@
     padding-bottom: 24px;
   }
 
-  .photo-autor {
+  .photo-promo__photo-autor {
     padding-top: 10px;
     padding-left: 30px;
   }
 
-  .photo-comment {
+  .photo-promo__photo-comment {
     grid-column: 1 / 3;
     order: 3;
     padding-left: 30px;
   }
 
-  .photo-likes {
+  .photo-promo__photo-likes {
     text-align: right;
     padding-right: 60px;
     padding-bottom: 0;
     padding-top: 15px;
   }
 
-  .photo-likes::before {
+  .photo-promo__photo-likes::before {
     right: 30px;
     left: inherit;
     top: 22px;
@@ -218,17 +218,17 @@
     padding-bottom: 89px;
   }
 
-  .photo-image {
+  .photo-promo__photo-image {
     width: auto;
     height: 506px;
   }
 
-  .picture-container::before {
+  .photo-promo__picture-container::before {
     right: 130px;
     top: 55px;
   }
 
-  .photo-container {
+  .photo-promo__photo-container {
     width: 940px;
   }
 }
