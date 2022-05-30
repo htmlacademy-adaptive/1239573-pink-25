@@ -19,22 +19,22 @@
   <!-- Шапка -->
   <header class="header">
     <div class="header__wrapper">
-      <div class="header-container">
-        <div class="logo-wrapper">
+      <div class="header__container">
+        <div class="header__logo-wrapper">
           <a class="header__logo" href="index.html">
             <svg class="header__logo-image" width="74" height="23" aria-label="Приложение «Pink»">
-              <use class="logo-mobile" href="img/sprite.svg#logo-white-mobile"></use>
-              <use class="logo-tablet" href="img/sprite.svg#logotype-white-tablet"></use>
-              <use class="logo-desktop" href="img/sprite.svg#logotype-white-desktop"></use>
+              <use class="header__logo-mobile" href="img/sprite.svg#logo-white-mobile"></use>
+              <use class="header__logo-tablet" href="img/sprite.svg#logotype-white-tablet"></use>
+              <use class="header__logo-desktop" href="img/sprite.svg#logotype-white-desktop"></use>
             </svg>
           </a>
-          <button class="nav-toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <button class="header__nav-toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         </div>
-        <nav class="nav-list nav-list--closed nav-list--nojs">
-          <a class="nav-item" href="index.html">Главная</a>
-          <a class="nav-item nav-item--current" href="photo.html">Фотографии</a>
-          <a class="nav-item" href="form.html">Конкурс</a>
-          <a class="nav-item" href="https://htmlacademy.ru">HTML Academy</a>
+        <nav class="header__nav-list header__nav-list--closed header__nav-list--nojs">
+          <a class="header__nav-item" href="index.html">Главная</a>
+          <a class="header__nav-item header__nav-item--current" href="photo.html">Фотографии</a>
+          <a class="header__nav-item" href="form.html">Конкурс</a>
+          <a class="header__nav-item" href="https://htmlacademy.ru">HTML Academy</a>
         </nav>
       </div>
     </div>
@@ -48,7 +48,7 @@
       <p class="photo-promo__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает
         ваших?
       </p>
-      <div class="picture-container">
+      <div class="photo-promo__picture-container">
         <a href="img/panorama-desktop.jpg">
           <picture>
             <source type="image/webp" media="(min-width: 1200px)"
@@ -58,17 +58,17 @@
             <source type="image/webp" srcset="img/panorama-mobile.webp 1x, img/panorama-mobile@2x.webp 2x">
             <source media="(min-width: 1200px)" srcset="img/panorama-desktop.jpg 1x, img/panorama-desktop@2x.jpg 2x">
             <source media="(min-width: 660px)" srcset="img/panorama-tablet.jpg 1x, img/panorama-tablet@2x.jpg 2x">
-            <img class="photo-image" src="img/panorama-mobile.jpg" width="320" height="137"
+            <img class="photo-promo__photo-image" src="img/panorama-mobile.jpg" width="320" height="137"
               alt="Подвесной мост в Красной Поляне">
           </picture>
         </a>
       </div>
-      <div class="photo-container">
-        <p class="photo-autor">Анна <span>(5 минут назад)</span></p>
-        <p class="photo-comment">Прыгать или нет? Напишите в комментарии свой совет и смотрите&nbsp;прямую трансляцию
+      <div class="photo-promo__photo-container">
+        <p class="photo-promo__photo-autor">Анна <span>(5 минут назад)</span></p>
+        <p class="photo-promo__photo-comment">Прыгать или нет? Напишите в комментарии свой совет и смотрите&nbsp;прямую трансляцию
           в
           перископе, задавайте свои вопросы!</p>
-        <p class="photo-likes">Нравится: 215</p>
+        <p class="photo-promo__photo-likes">Нравится: 215</p>
       </div>
     </section>
     <!-- Галерея -->
@@ -220,14 +220,14 @@
 
           <div class="form-photo__wrapper">
             <div class="form-photo__icons">
-              <div class="photo-icons photo-icons--crop">
-                <div class="icons-underline icons-underline--crop"> </div>
+              <div class="form-photo__photo-icons form-photo__photo-icons--crop">
+                <div class="form-photo__icons-underline form-photo__icons-underline--crop"> </div>
               </div>
-              <div class="photo-icons photo-icons--fill">
-                <div class="icons-underline icons-underline--fill"> </div>
+              <div class="form-photo__photo-icons form-photo__photo-icons--fill">
+                <div class="form-photo__icons-underline form-photo__icons-underline--fill"> </div>
               </div>
-              <div class="photo-icons photo-icons--contrast">
-                <div class="icons-underline icons-underline--contrast"> </div>
+              <div class="form-photo__photo-icons form-photo__photo-icons--contrast">
+                <div class="form-photo__icons-underline form-photo__icons-underline--contrast"> </div>
               </div>
             </div>
 
@@ -243,29 +243,29 @@
   <!-- Подвал -->
   <footer class="footer">
     <a class="footer__logo" href="index.html">
-      <svg class="footer__logo-image" width="147" height="40">
+      <svg class="footer__logo-image" width="147" height="40" aria-label="Логотип приложения Pink">
         <use class="footer__logo-mobile" href="img/sprite.svg#logo-dark-mobile"></use>
         <use class="footer__logo-desktop" href="img/sprite.svg#logotype-blue-desktop"></use>
       </svg>
     </a>
-    <nav class="social-list">
-      <a class="social-item social-item--vk" href="https://vk.com/">Ссылка на VK
-        <svg class="social-icon social-icon--youtube" width="18" height="18" aria-label="vk">
+    <nav class="footer__social-list">
+      <a class="footer__social-item footer__social-item--vk" href="https://vk.com/">Ссылка на VK
+        <svg class="footer__social-icon footer__social-icon--youtube" width="18" height="18" aria-label="vk">
           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#vk"></use>
         </svg>youtube
       </a>
-      <a class="social-item social-item--telegram" href="https://web.telegram.org/z/">Ссылка на telegram
-        <svg class="social-icon social-icon--telegram" width="18" height="18" aria-label="telegram">
+      <a class="footer__social-item footer__social-item--telegram" href="https://web.telegram.org/z/">Ссылка на telegram
+        <svg class="footer__social-icon footer__social-icon--telegram" width="18" height="18" aria-label="telegram">
           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#telegram"></use>
         </svg>youtube
       </a>
-      <a class="social-item social-item--youtube" href="https://www.youtube.com/">Ссылка на youtube
-        <svg class="social-icon social-icon--youtube" width="18" height="18" aria-label="youtube">
+      <a class="footer__social-item footer__social-item--youtube" href="https://www.youtube.com/">Ссылка на youtube
+        <svg class="footer__social-icon footer__social-icon--youtube" width="18" height="18" aria-label="youtube">
           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#youtube"></use>
         </svg>youtube
       </a>
     </nav>
-    <a class="htmlacdademy-link" href="https://htmlacademy.ru/">Разработано</a>
+    <a class="footer__htmlacdademy-link" href="https://htmlacademy.ru/">Разработано</a>
   </footer>
   <script src="js/script.js"></script>
 </body>
